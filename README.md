@@ -12,6 +12,7 @@ Capacités des joueurs :
 - Grimper sur le votre collègue
 - Détourner les attaques des monstres
 - Utiliser un outil
+
 ---
 
 ## Niveaux
