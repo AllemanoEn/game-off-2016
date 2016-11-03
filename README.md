@@ -1,9 +1,9 @@
-# GitHub Game Off 2016 - TUG
+# GitHub Game Off 2016 - Tasdulku
 
 ## *FR*
 
 ### Principe du jeu
-TUG est un jeu médiaval en 2D/2.5D se jouant à deux joueurs en LAN/WAN.  
+Tasdulku est un jeu médiaval en 2.5D se jouant à deux joueurs en LAN/WAN.  
 Le jeu est composé de plusieurs niveaux.  
 Pour s'échapper des différents niveaux, les deux joueurs devront s'entraider et communiquer entre eux pour détourner l'esprit des créatures afin d'utiliser leurs pouvoirs pour sortir des différents niveaux.
 
