@@ -3,7 +3,7 @@
 ## *FR*
 
 ### Principe du jeu
-Increase your Mind est un jeu médiaval en 2.5D se jouant à deux joueurs en LAN/WAN.  
+Increase Your Mind est un jeu médiaval en 2.5D se jouant à deux joueurs en LAN/WAN.  
 Le jeu est composé de plusieurs niveaux.  
 Pour s'échapper des différents niveaux, les deux joueurs devront s'entraider et communiquer entre eux pour détourner les sorts des créatures pour sortir des différents niveaux.
 
