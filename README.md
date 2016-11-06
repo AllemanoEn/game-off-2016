@@ -1,5 +1,5 @@
 # GitHub Game Off 2016 - Increase your Mind
-<p align=center><img src="./ressource/logo.png" width="350"/></p>
+<p align=center><img src="./ressource/logo.png" width="350px"/></p>
 ## *FR*
 
 ### Principe du jeu
