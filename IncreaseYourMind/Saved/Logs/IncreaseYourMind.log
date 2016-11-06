@@ -1,9 +1,9 @@
-﻿Log file open, 11/06/16 19:33:51
+﻿Log file open, 11/06/16 21:10:27
 LogInit:Display: Running engine for game: IncreaseYourMind
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(-1507045344) SRandInit(-1507045340).
-LogTaskGraph: Started task graph with 4 named threads and 5 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.105684
+LogInit:Display: RandInit(-1243972512) SRandInit(-1243972508).
+LogTaskGraph: Started task graph with 4 named threads and 9 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.100853
 LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
 LogInit: API Version: 2992821
 LogInit: Net Version: 3039270
@@ -25,8 +25,8 @@ LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
 LogInit: Compiled with Visual C++: 19.00.23026.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.12
-LogInit: Command line:  
-LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: E:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Using libcurl 7.41.0
 LogInit:  - built for x86_64-pc-win32
@@ -44,971 +44,598 @@ LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2016.11.06-18.33.51:468][  0]LogInit: Selected Device Profile: [Windows]
-[2016.11.06-18.33.51:468][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.11.06-18.33.51:547][  0]LogInit: Computer: VM-WIN10X64-DEV
-[2016.11.06-18.33.51:547][  0]LogInit: User: admin
-[2016.11.06-18.33.51:547][  0]LogInit: CPU Page size=65536, Cores=2
-[2016.11.06-18.33.51:547][  0]LogInit: High frequency timer resolution =3.808476 MHz
-[2016.11.06-18.33.51:547][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
-[2016.11.06-18.33.51:547][  0]LogMemory: Platform Memory Stats for Windows
-[2016.11.06-18.33.51:547][  0]LogMemory: Process Physical Memory: 190.00 MB used, 190.00 MB peak
-[2016.11.06-18.33.51:547][  0]LogMemory: Process Virtual Memory: 194.86 MB used, 194.86 MB peak
-[2016.11.06-18.33.51:547][  0]LogMemory: Physical Memory: 1652.25 MB used, 8191.49 MB total
-[2016.11.06-18.33.51:547][  0]LogMemory: Virtual Memory: 552.28 MB used, 134217728.00 MB total
-[2016.11.06-18.33.51:876][  0]LogTextLocalizationManager: No translations for ('fr-CH') exist, falling back to 'en' for localization and internationalization data.
-[2016.11.06-18.33.52:418][  0]LogD3D11RHI: D3D11 adapters:
-[2016.11.06-18.33.52:606][  0]LogD3D11RHI:    0. 'VMware SVGA 3D' (Feature Level 10_0)
-[2016.11.06-18.33.52:606][  0]LogD3D11RHI:       4/0/1056 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x15ad
-[2016.11.06-18.33.52:609][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2016.11.06-18.33.52:609][  0]LogD3D11RHI:       0/0/4095 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2016.11.06-18.33.52:609][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2016.11.06-18.33.52:616][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2016.11.06-18.33.52:616][  0]LogD3D11RHI:     GPU DeviceId: 0x405 (for the marketing name, search the web for "GPU Device Id")
-[2016.11.06-18.33.52:616][  0]LogWindows: EnumDisplayDevices:
-[2016.11.06-18.33.52:616][  0]LogWindows:    0. 'VMware SVGA 3D' (P:1 D:1)
-[2016.11.06-18.33.52:617][  0]LogWindows:    1. 'VMware SVGA 3D' (P:0 D:0)
-[2016.11.06-18.33.52:617][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid GetVideoDriverDetailsInvalid FoundDriverCount:2 
-[2016.11.06-18.33.52:617][  0]LogD3D11RHI:     Adapter Name: VMware SVGA 3D
-[2016.11.06-18.33.52:617][  0]LogD3D11RHI:   Driver Version: 8.15.1.48 (internal:8.15.1.48, unified:8.15.1.48)
-[2016.11.06-18.33.52:617][  0]LogD3D11RHI:      Driver Date: 7-12-2016
-[2016.11.06-18.33.52:617][  0]LogRHI: Texture pool is 369 MB (70% of 528 MB)
-[2016.11.06-18.33.52:620][  0]LogD3D11RHI: Async texture creation disabled: no driver support
-[2016.11.06-18.33.52:635][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2016.11.06-18.33.52:635][  0]LogShaderCompilers: Guid format shader working directory is -20 characters bigger than the processId version (../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Intermediate/Shaders/WorkingDirectory/3116/).
-[2016.11.06-18.33.52:635][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/admin/AppData/Local/Temp/UnrealShaderWorkingDir/634CF2C14C973621A8182FB10E235539/'.
-[2016.11.06-18.33.52:636][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.11.06-18.33.55:726][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.11.06-18.33.55:738][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.11.06-18.33.55:749][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.11.06-18.33.55:761][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.11.06-18.33.55:772][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.11.06-18.33.55:784][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.11.06-18.33.55:793][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.11.06-18.33.55:803][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.11.06-18.33.55:812][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.11.06-18.33.55:821][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.11.06-18.33.55:830][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.11.06-18.33.55:848][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.11.06-18.33.55:848][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.11.06-18.33.55:849][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.11.06-18.33.55:923][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.11.06-18.33.55:932][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2016.11.06-18.33.55:942][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.11.06-18.33.55:951][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.11.06-18.33.55:975][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.11.06-18.33.55:975][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.11.06-18.33.56:606][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.11.06-18.33.57:220][  0]LogDerivedDataCache: Loaded boot cache 0.61s 49MB C:/Users/admin/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2016.11.06-18.33.57:220][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/admin/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
-[2016.11.06-18.33.57:221][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.11.06-18.33.57:221][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.11.06-18.33.57:221][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.11.06-18.33.57:221][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.11.06-18.33.57:266][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.11.06-18.33.57:280][  0]LogDerivedDataCache: Using Local data cache path C:/Users/admin/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.11.06-18.34.07:942][  0]LogInit: Selected Device Profile: [Windows]
-[2016.11.06-18.34.07:980][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2016.11.06-18.34.09:415][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.11.06-18.34.09:415][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.11.06-18.34.09:415][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2016.11.06-18.34.14:357][  0]LogAssetRegistry: FAssetRegistry took 0.0219 seconds to start up
-[2016.11.06-18.34.14:492][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.128729 seconds
-[2016.11.06-18.34.14:514][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
-[2016.11.06-18.34.14:514][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
-[2016.11.06-18.34.14:514][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2016.11.06-18.34.14:524][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.11.06-18.34.17:609][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.11.06-18.34.17:609][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.11.06-18.34.39:947][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.11.06-18.34.41:410][  0]SourceControl: Info Source control is disabled
-[2016.11.06-18.34.41:543][  0]SourceControl: Info Source control is disabled
-[2016.11.06-18.34.41:606][  0]SourceControl: Info Source control is disabled
-[2016.11.06-18.34.41:645][  0]SourceControl: Info Source control is disabled
-[2016.11.06-18.34.42:575][  0]LogEngine: Initializing Engine...
-[2016.11.06-18.34.42:667][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.11.06-18.34.42:668][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.11.06-18.34.43:445][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.11.06-18.34.43:489][  0]LogInit: XAudio2 using 'Haut-parleurs (Périphérique High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.11.06-18.34.43:602][  0]LogInit: FAudioDevice initialized.
-[2016.11.06-18.34.43:636][  0]LogDerivedDataCache: Saved boot cache 0.03s 49MB C:/Users/admin/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
-[2016.11.06-18.34.43:680][  0]LogInit: Texture streaming: Enabled
-[2016.11.06-18.34.43:722][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.11.06-18.34.43:838][  0]LogInit: Transaction tracking system initialized
-[2016.11.06-18.34.44:433][  0]BlueprintLog: New page: Editor Load
-[2016.11.06-18.34.47:824][  0]LocalizationService: Info Localization service is disabled
-[2016.11.06-18.34.48:380][  0]LogConsoleResponse:Display: 
-[2016.11.06-18.34.51:041][  0]LogCook:Display: Max memory allowance for cook 8192mb
-[2016.11.06-18.34.51:042][  0]LogCook:Display: Mobile HDR setting 1
-[2016.11.06-18.34.51:560][  0]LogFileCache: Scanning file cache for directory 'C:/Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/' took 0.02s
-[2016.11.06-18.34.52:292][  0]SourceControl: Info Source control is disabled
-[2016.11.06-18.34.52:301][  0]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/TopDownExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-18.34.52:303][  0]LightingResults: New page: Lighting Build
-[2016.11.06-18.34.52:327][  0]MapCheck: New page: Map Check
-[2016.11.06-18.34.52:327][  0]LightingResults: New page: Lighting Build
-[2016.11.06-18.34.55:093][  0]LogAIModule: Creating AISystem for world TopDownExampleMap
-[2016.11.06-18.34.55:450][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-18.34.55:454][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-18.34.55:530][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 75.38ms to complete.
-[2016.11.06-18.34.55:530][  0]LogFileHelpers: Loading map 'TopDownExampleMap' took 3.229
-[2016.11.06-18.34.56:321][  0]LogCollectionManager: Loaded 0 collections in 0.026763 seconds
-[2016.11.06-18.34.56:434][  0]LogFileCache: Scanning file cache for directory 'C:/Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/Collections/' took 0.01s
-[2016.11.06-18.34.56:434][  0]LogFileCache: Scanning file cache for directory 'C:/Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/Developers/admin/Collections/' took 0.01s
-[2016.11.06-18.34.56:434][  0]LogFileCache: Scanning file cache for directory 'C:/Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/Collections/' took 0.01s
-[2016.11.06-18.34.56:434][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000006 seconds
-[2016.11.06-18.34.56:446][  0]LogContentBrowser: Native class hierarchy populated in 0.0106 seconds. Added 2047 classes and 369 folders.
-[2016.11.06-18.34.56:531][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2016.11.06-18.34.56:532][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2016.11.06-18.34.56:533][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0006 seconds. Added 12 classes and 0 folders.
-[2016.11.06-18.34.56:585][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2016.11.06-18.34.59:025][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
-[2016.11.06-18.34.59:032][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2016.11.06-18.34.59:092][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.11.06-18.34.59:184][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.11.06-18.34.59:334][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0009 seconds. Added 1 classes and 2 folders.
-[2016.11.06-18.34.59:335][  0]LogLoad: Full Startup: 70.77 seconds (BP compile: 0.47 seconds)
-[2016.11.06-18.34.59:336][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2016.11.06-18.34.59:336][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2016.11.06-18.34.59:347][  0]LogOcInput: OculusInput pre-init called
-[2016.11.06-18.34.59:367][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.11.06-18.35.00:219][  0]LogRenderer: Reallocating scene render targets to support 1208x480 (Frame:2).
-[2016.11.06-18.35.02:823][  3]LogAssetRegistry: Asset discovery search completed in 48.4877 seconds
-[2016.11.06-18.35.02:823][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.11.06-18.35.02:823][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000432 seconds (updated 0 objects)
-[2016.11.06-18.41.57:036][860]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2016.11.06-18.41.57:036][860]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.11.06-18.41.57:085][860]PIE: New page: PIE session: TopDownExampleMap (Nov 6, 2016, 8:41:57 PM)
-[2016.11.06-18.41.57:085][860]LogPlayLevel: Creating play world package: /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap
-[2016.11.06-18.41.57:149][860]LogPlayLevel: PIE: StaticDuplicateObject took: (0.063876s)
-[2016.11.06-18.41.57:150][860]LogAIModule: Creating AISystem for world TopDownExampleMap
-[2016.11.06-18.41.57:150][860]LogPlayLevel: PIE: World Init took: (0.001549s)
-[2016.11.06-18.41.57:151][860]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap to /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap.TopDownExampleMap (0.066160s)
-[2016.11.06-18.41.57:267][860]LogInit: XAudio2 using 'Haut-parleurs (Périphérique High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.11.06-18.41.57:284][860]LogInit: FAudioDevice initialized.
-[2016.11.06-18.41.57:397][860]LogWorld: Game class is 'TopDownGameMode_C'
-[2016.11.06-18.41.57:404][860]LogWorld: Bringing World /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap.TopDownExampleMap up for play (max tick rate 0) at 2016.11.06-19.41.57
-[2016.11.06-18.41.57:407][860]LogWorld: Bringing up level for play took: 0.008535
-[2016.11.06-18.41.57:458][860]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
-[2016.11.06-18.41.57:460][860]PIE: Info Play in editor start time for /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap 0.854
-[2016.11.06-18.41.57:460][860]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2016.11.06-18.42.52:031][849]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2016.11.06-18.42.52:136][849]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2016.11.06-18.42.57:056][ 34]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube30)
-[2016.11.06-18.43.28:486][888]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2016.11.06-18.43.28:486][888]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.11.06-18.43.28:487][888]PIE: New page: PIE session: TopDownExampleMap (Nov 6, 2016, 8:43:28 PM)
-[2016.11.06-18.43.28:487][888]LogPlayLevel: Creating play world package: /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap
-[2016.11.06-18.43.28:557][888]LogPlayLevel: PIE: StaticDuplicateObject took: (0.069735s)
-[2016.11.06-18.43.28:558][888]LogAIModule: Creating AISystem for world TopDownExampleMap
-[2016.11.06-18.43.28:558][888]LogPlayLevel: PIE: World Init took: (0.001291s)
-[2016.11.06-18.43.28:558][888]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap to /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap.TopDownExampleMap (0.071471s)
-[2016.11.06-18.43.28:581][888]LogInit: XAudio2 using 'Haut-parleurs (Périphérique High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.11.06-18.43.28:599][888]LogInit: FAudioDevice initialized.
-[2016.11.06-18.43.28:985][888]LogWorld: Game class is 'TopDownGameMode_C'
-[2016.11.06-18.43.28:993][888]LogWorld: Bringing World /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap.TopDownExampleMap up for play (max tick rate 0) at 2016.11.06-19.43.28
-[2016.11.06-18.43.28:993][888]LogWorld: Bringing up level for play took: 0.007221
-[2016.11.06-18.43.28:995][888]PIE: Info Play in editor start time for /Game/TopDownBP/Maps/UEDPIE_0_TopDownExampleMap 0.389
-[2016.11.06-18.43.28:995][888]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2016.11.06-18.43.48:999][836]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2016.11.06-18.43.49:113][836]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap' with GeneratedClass '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TopDownExampleMap.TopDownExampleMap:PersistentLevel.TopDownExampleMap'
-[2016.11.06-18.44.12:688][751]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
-[2016.11.06-18.44.17:054][868]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
-[2016.11.06-18.44.23:973][118]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube30)
-[2016.11.06-18.45.01:394][318]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
-[2016.11.06-18.45.02:349][343]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
-[2016.11.06-18.45.24:492][810]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
-[2016.11.06-18.45.27:926][926]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube30)
-[2016.11.06-18.46.17:414][735]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
-[2016.11.06-18.46.34:999][466]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall3)
-[2016.11.06-18.46.44:677][725]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall2)
-[2016.11.06-18.46.45:776][767]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall2)
-[2016.11.06-18.47.12:553][386]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
-[2016.11.06-18.47.20:346][596]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
-[2016.11.06-18.47.32:061][959]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall5)
-[2016.11.06-18.47.39:870][165]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall2)
-[2016.11.06-18.48.02:399][890]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall2)
-[2016.11.06-18.48.24:392][896]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Wall1)
-[2016.11.06-18.48.43:981][586]MapCheck: New page: Map Check
-[2016.11.06-18.48.44:102][586]LightingResults: New page: Lighting Build - Nov 6, 2016, 8:48:44 PM
-[2016.11.06-18.48.44:406][586]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2016.11.06-18.48.44:523][586]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2016.11.06-18.48.44:563][586]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2016.11.06-18.48.46:087][586]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2016.11.06-18.48.46:087][586]LogSwarmInterface: [TryOpenConnection] Local Process ID is 3116
-[2016.11.06-18.48.53:348][586]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2016.11.06-18.48.53:348][586]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2016.11.06-18.48.53:348][586]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2016.11.06-18.48.53:348][586]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2016.11.06-18.48.53:348][586]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2016.11.06-18.48.53:753][586]LogEditorBuildUtils: Build time 0:09
-[2016.11.06-18.48.57:553][596]LogSavePackage: Save=407.82ms
-[2016.11.06-18.48.57:553][596]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/TopDownExampleMap_Auto19358948B4ECDA3EA0F86A7B803245F73.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/Autosaves/Game/TopDownBP/Maps/TopDownExampleMap_Auto1.umap'
-[2016.11.06-18.48.57:557][596]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/Autosaves/Game/TopDownBP/Maps/TopDownExampleMap_Auto1.umap
-[2016.11.06-18.48.57:561][596]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/TopDownBP/Maps/TopDownExampleMap' took 0.491
-[2016.11.06-18.48.57:561][596]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.491
-[2016.11.06-18.50.30:322][737]Job is a success!
-[2016.11.06-18.50.31:281][738]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT)
-[2016.11.06-18.50.31:281][738]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
-[2016.11.06-18.50.31:281][738]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
-[2016.11.06-18.50.31:282][738]LogTexture:Display: Building textures: SkyOcclusion1_2 (AutoDXT)
-[2016.11.06-18.50.31:282][738]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT)
-[2016.11.06-18.50.31:282][738]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1)
-[2016.11.06-18.50.31:282][738]LogTexture:Display: Building textures: SkyOcclusion0_3 (AutoDXT)
-[2016.11.06-18.50.31:282][738]LogTexture:Display: Building textures: HQ_Lightmap0_3 (AutoDXT)
-[2016.11.06-18.50.31:282][738]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1)
-[2016.11.06-18.50.31:926][738]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8)
-[2016.11.06-18.50.31:926][738]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8)
-[2016.11.06-18.50.32:118][738]Lightmass on VM-WIN10X64-DEV: 1:36 min total, 264 ms importing, 22 ms setup, 3.94 sec photons, 1:32 min processing, 0 ms extra exporting [7/7 mappings]. Threads: 3:04 min total, 1:30 min processing.
-[2016.11.06-18.50.32:162][738]LogStaticLightingSystem: Illumination: 1:47 min (702 ms encoding lightmaps, 640 ms encoding shadowmaps)
-[2016.11.06-18.50.32:162][738]LogStaticLightingSystem: Lightmap texture memory:  2.7 MB (2.7 MB streaming, 0.0 MB non-streaming), 6 textures
-[2016.11.06-18.50.32:162][738]LogStaticLightingSystem: Shadowmap texture memory: 2.7 MB (2.7 MB streaming, 0.0 MB non-streaming), 2 textures
-[2016.11.06-18.50.32:987][739]Cmd: MAP CHECK NOTIFYRESULTS
-[2016.11.06-18.50.32:987][739]MapCheck: New page: TopDownExampleMap - Nov 6, 2016, 8:50:32 PM
-[2016.11.06-18.50.33:073][739]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 85.979ms to complete.
-[2016.11.06-18.54.00:680][389]LogSavePackage: Save=549.81ms
-[2016.11.06-18.54.00:680][389]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/TopDownExampleMap4216D9664CBDB3840AC505A99F03092B.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/TopDownExampleMap.umap'
-[2016.11.06-18.54.00:687][389]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/TopDownExampleMap.umap
-[2016.11.06-18.54.03:051][438]LogSavePackage: Save=531.50ms
-[2016.11.06-18.54.03:051][438]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/TopDownExampleMap00D3E8FB46D76F09E6345FB07B6BACA5.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/TopDownExampleMap.umap'
-[2016.11.06-18.54.03:054][438]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/TopDownExampleMap.umap
-[2016.11.06-18.54.59:308][444]LogMetaData: Removing '/Game/TopDownBP/Maps/Level1.SKEL_Level1_C' ref from Metadata '/Game/TopDownBP/Maps/TopDownExampleMap.PackageMetaData'
-[2016.11.06-18.54.59:309][444]LogMetaData: Removing '/Game/TopDownBP/Maps/Level1.Level1_C' ref from Metadata '/Game/TopDownBP/Maps/TopDownExampleMap.PackageMetaData'
-[2016.11.06-18.54.59:982][444]LogSavePackage: Save=530.82ms
-[2016.11.06-18.54.59:982][444]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/Level11B25354B47D7D6F88A392BB4A6A19DF4.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap'
-[2016.11.06-18.54.59:985][444]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap
-[2016.11.06-18.55.00:015][444]LogFileHelpers: Saving map 'Level1' took 0.657
-[2016.11.06-18.57.59:031][ 82]LogSavePackage: Save=434.78ms
-[2016.11.06-18.57.59:031][ 82]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/Level1112338AB46ED18F6AFA0E6A7B3C43551.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap'
-[2016.11.06-18.57.59:034][ 82]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap
-[2016.11.06-18.58.01:121][106]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
-[2016.11.06-18.58.01:623][107]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
-[2016.11.06-18.58.51:040][735]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level2.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-18.58.51:042][735]LightingResults: New page: Lighting Build
-[2016.11.06-18.58.51:043][735]LoadErrors: New page: Loading map: Level2.umap
-[2016.11.06-18.58.51:049][735]MapCheck: New page: Map Check
-[2016.11.06-18.58.51:049][735]LightingResults: New page: Lighting Build
-[2016.11.06-18.58.51:093][735]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-18.58.51:094][735]LogAIModule: Creating AISystem for world Level2
-[2016.11.06-18.58.51:134][735]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-18.58.51:208][735]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 73.921ms to complete.
-[2016.11.06-18.58.51:209][735]LogFileHelpers: Loading map 'Level2' took 0.171
-[2016.11.06-18.58.58:385][164]LogAIModule: Creating AISystem for world Level1
-[2016.11.06-18.59.06:897][227]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-18.59.06:899][227]LightingResults: New page: Lighting Build
-[2016.11.06-18.59.06:900][227]LoadErrors: New page: Loading map: Level1.umap
-[2016.11.06-18.59.06:904][227]MapCheck: New page: Map Check
-[2016.11.06-18.59.06:904][227]LightingResults: New page: Lighting Build
-[2016.11.06-18.59.06:940][227]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-18.59.06:993][227]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-18.59.07:065][227]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 72.239ms to complete.
-[2016.11.06-18.59.07:066][227]LogFileHelpers: Loading map 'Level1' took 2.785
-[2016.11.06-18.59.19:777][833]LogSavePackage: Save=12.20ms
-[2016.11.06-18.59.19:777][833]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/Level23A874728422521609E275C8E68E8DB43.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level2.umap'
-[2016.11.06-18.59.19:780][833]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level2.umap
-[2016.11.06-18.59.19:781][833]LogFileHelpers: Saving map 'Level2' took 0.110
-[2016.11.06-18.59.37:110][622]LogSavePackage: Save=12.53ms
-[2016.11.06-18.59.37:110][622]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/LevelSkeleton701AB2C042CCA0135BDE37916D7AF034.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap'
-[2016.11.06-18.59.37:113][622]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap
-[2016.11.06-18.59.37:114][622]LogFileHelpers: Saving map 'LevelSkeleton' took 0.110
-[2016.11.06-18.59.43:820][935]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (LevelLabel)
-[2016.11.06-18.59.58:929][415]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube30)
-[2016.11.06-19.00.00:633][484]Cmd: DELETE
-[2016.11.06-19.00.00:633][484]Cmd: ACTOR DELETE
-[2016.11.06-19.00.00:659][484]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.11.06-19.00.00:679][484]LogEditorActor: Deleted 1 Actors (0.021 secs)
-[2016.11.06-19.00.09:589][900]MapCheck: New page: Map Check
-[2016.11.06-19.00.09:661][900]Cmd: MAP REBUILD ALLVISIBLE
-[2016.11.06-19.00.09:661][900]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2016.11.06-19.00.09:826][900]LightingResults: New page: Lighting Build - Nov 6, 2016, 9:00:09 PM
-[2016.11.06-19.00.09:838][900]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2016.11.06-19.00.09:839][900]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2016.11.06-19.00.09:839][900]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2016.11.06-19.00.09:841][900]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2016.11.06-19.00.09:841][900]LogSwarmInterface: [TryOpenConnection] Local Process ID is 3116
-[2016.11.06-19.00.14:488][900]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2016.11.06-19.00.14:488][900]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2016.11.06-19.00.14:488][900]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2016.11.06-19.00.14:488][900]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2016.11.06-19.00.14:488][900]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2016.11.06-19.00.14:677][900]Cmd: MAP CHECK DONTDISPLAYDIALOG
-[2016.11.06-19.00.14:678][900]MapCheck: New page: Level1 - Nov 6, 2016, 9:00:14 PM
-[2016.11.06-19.00.14:748][900]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 70.839ms to complete.
-[2016.11.06-19.00.14:771][900]LogEditorBuildUtils: Build time 0:05
-[2016.11.06-19.01.49:544][573]Job is a success!
-[2016.11.06-19.01.50:958][574]LogTexture:Display: Building textures: SkyOcclusion1_1 (AutoDXT)
-[2016.11.06-19.01.50:958][574]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
-[2016.11.06-19.01.50:958][574]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1)
-[2016.11.06-19.01.50:958][574]LogTexture:Display: Building textures: SkyOcclusion0_2 (AutoDXT)
-[2016.11.06-19.01.50:958][574]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
-[2016.11.06-19.01.50:958][574]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1)
-[2016.11.06-19.01.51:463][574]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (G8)
-[2016.11.06-19.01.51:463][574]LogTexture:Display: Building textures: ShadowMapTexture2D_3 (G8)
-[2016.11.06-19.01.51:531][574]LogStaticLightingSystem: Illumination: 1:41 min (832 ms encoding lightmaps, 504 ms encoding shadowmaps)
-[2016.11.06-19.01.51:531][574]LogStaticLightingSystem: Lightmap texture memory:  2.7 MB (2.7 MB streaming, 0.0 MB non-streaming), 4 textures
-[2016.11.06-19.01.51:531][574]LogStaticLightingSystem: Shadowmap texture memory: 0.7 MB (0.7 MB streaming, 0.0 MB non-streaming), 2 textures
-[2016.11.06-19.01.52:184][575]Cmd: MAP CHECK NOTIFYRESULTS
-[2016.11.06-19.01.52:185][575]MapCheck: New page: Level1 - Nov 6, 2016, 9:01:52 PM
-[2016.11.06-19.01.52:272][575]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 87.248ms to complete.
-[2016.11.06-19.03.54:614][ 49]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.03.54:616][ 49]LightingResults: New page: Lighting Build
-[2016.11.06-19.03.54:617][ 49]LoadErrors: New page: Loading map: Level1.umap
-[2016.11.06-19.03.54:621][ 49]MapCheck: New page: Map Check
-[2016.11.06-19.03.54:621][ 49]LightingResults: New page: Lighting Build
-[2016.11.06-19.03.54:741][ 49]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
-[2016.11.06-19.03.55:172][ 49]LogTexture:Display: Building textures: HQ_Lightmap0_3 (AutoDXT)
-[2016.11.06-19.03.55:193][ 49]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
-[2016.11.06-19.03.55:361][ 49]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1)
-[2016.11.06-19.03.55:372][ 49]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT)
-[2016.11.06-19.03.55:563][ 49]LogTexture:Display: Building textures: SkyOcclusion0_3 (AutoDXT)
-[2016.11.06-19.03.55:576][ 49]LogAIModule: Creating AISystem for world Level1
-[2016.11.06-19.03.55:585][ 49]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.03.55:693][ 49]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.03.55:769][ 49]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 75.288ms to complete.
-[2016.11.06-19.03.55:770][ 49]LogFileHelpers: Loading map 'Level1' took 1.158
-[2016.11.06-19.04.04:670][465]LogAIModule: Creating AISystem for world LevelSkeleton
-[2016.11.06-19.04.06:300][528]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.04.06:302][528]LightingResults: New page: Lighting Build
-[2016.11.06-19.04.06:303][528]LoadErrors: New page: Loading map: LevelSkeleton.umap
-[2016.11.06-19.04.06:305][528]MapCheck: New page: Map Check
-[2016.11.06-19.04.06:305][528]LightingResults: New page: Lighting Build
-[2016.11.06-19.04.06:333][528]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.04.06:365][528]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.04.06:444][528]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 78.347ms to complete.
-[2016.11.06-19.04.06:445][528]LogFileHelpers: Loading map 'LevelSkeleton' took 0.147
-[2016.11.06-19.04.28:205][780]LogSavePackage: Save=12.47ms
-[2016.11.06-19.04.28:205][780]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/LevelSkeleton2CBF3E794598B5850A7376B388943673.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap'
-[2016.11.06-19.04.28:207][780]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap
-[2016.11.06-19.04.28:240][780]LogFileHelpers: Saving map 'LevelSkeleton' took 0.141
-[2016.11.06-19.04.30:230][901]LogAIModule: Creating AISystem for world Level1
-[2016.11.06-19.04.31:668][974]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.04.31:669][974]LightingResults: New page: Lighting Build
-[2016.11.06-19.04.31:670][974]LoadErrors: New page: Loading map: Level1.umap
-[2016.11.06-19.04.31:672][974]MapCheck: New page: Map Check
-[2016.11.06-19.04.31:672][974]LightingResults: New page: Lighting Build
-[2016.11.06-19.04.31:703][974]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.04.31:747][974]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.04.31:821][974]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 74.526ms to complete.
-[2016.11.06-19.04.31:822][974]LogFileHelpers: Loading map 'Level1' took 0.157
-[2016.11.06-19.05.04:083][412]LogAIModule: Creating AISystem for world LevelSkeleton
-[2016.11.06-19.05.06:221][502]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.05.06:229][502]LightingResults: New page: Lighting Build
-[2016.11.06-19.05.06:231][502]LoadErrors: New page: Loading map: LevelSkeleton.umap
-[2016.11.06-19.05.06:250][502]MapCheck: New page: Map Check
-[2016.11.06-19.05.06:250][502]LightingResults: New page: Lighting Build
-[2016.11.06-19.05.06:275][502]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.05.06:304][502]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.05.06:379][502]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 75.118ms to complete.
-[2016.11.06-19.05.06:380][502]LogFileHelpers: Loading map 'LevelSkeleton' took 0.161
-[2016.11.06-19.05.11:018][768]LogText:Warning: Failed to parse argument "GameModeName" as a number (using "0" as a fallback). Please check your format string for errors: "GameMode: Edit {GameModeName}".
-[2016.11.06-19.05.25:196][231]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
-[2016.11.06-19.05.26:159][231]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0010 seconds. Added 111 classes and 0 folders.
-[2016.11.06-19.05.43:033][890]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/TopDownOverview" FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/TopDownOverview.uasset" SILENT=true
-[2016.11.06-19.05.43:056][890]LogSavePackage: Save=11.67ms
-[2016.11.06-19.05.43:056][890]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/TopDownOverview6AB0D3964C30B9291D989DBEC1136D14.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/TopDownOverview.uasset'
-[2016.11.06-19.05.43:057][890]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/TopDownOverview.uasset
-[2016.11.06-19.06.18:509][599]MapCheck: New page: Map Check
-[2016.11.06-19.06.18:580][599]Cmd: MAP REBUILD ALLVISIBLE
-[2016.11.06-19.06.18:580][599]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2016.11.06-19.06.18:591][599]LightingResults: New page: Lighting Build - Nov 6, 2016, 9:06:18 PM
-[2016.11.06-19.06.18:601][599]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2016.11.06-19.06.18:603][599]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2016.11.06-19.06.18:603][599]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2016.11.06-19.06.18:605][599]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2016.11.06-19.06.18:605][599]LogSwarmInterface: [TryOpenConnection] Local Process ID is 3116
-[2016.11.06-19.06.23:121][599]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
-[2016.11.06-19.06.23:121][599]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2016.11.06-19.06.23:121][599]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2016.11.06-19.06.23:121][599]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2016.11.06-19.06.23:121][599]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2016.11.06-19.06.23:121][599]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2016.11.06-19.06.23:193][599]Cmd: MAP CHECK DONTDISPLAYDIALOG
-[2016.11.06-19.06.23:194][599]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:06:23 PM
-[2016.11.06-19.06.23:280][599]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 86.654ms to complete.
-[2016.11.06-19.06.23:303][599]LogEditorBuildUtils: Build time 0:04
-[2016.11.06-19.06.24:532][622]Job is a success!
-[2016.11.06-19.06.24:787][624]Lightmass on VM-WIN10X64-DEV: 594 ms total, 258 ms importing, 40 ms setup, 12 ms photons, 246 ms processing, 0 ms extra exporting [0/0 mappings]. Threads: 493 ms total, 0 ms processing.
-[2016.11.06-19.06.24:803][624]LogStaticLightingSystem: Illumination: 6.12 sec (0 ms encoding lightmaps, 0 ms encoding shadowmaps)
-[2016.11.06-19.06.24:803][624]LogStaticLightingSystem: Lightmap texture memory:  0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
-[2016.11.06-19.06.24:803][624]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
-[2016.11.06-19.06.25:134][625]Cmd: MAP CHECK NOTIFYRESULTS
-[2016.11.06-19.06.25:134][625]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:06:25 PM
-[2016.11.06-19.06.25:230][625]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 96.082ms to complete.
-[2016.11.06-19.06.34:170][ 82]LogActorFactory: Actor Factory created Cube
-[2016.11.06-19.06.34:735][116]LogActorFactory: Actor Factory created Cube
-[2016.11.06-19.07.17:343][868]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
-[2016.11.06-19.08.32:528][603]LogEditorViewport: Clicking Background
-[2016.11.06-19.08.40:216][120]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
-[2016.11.06-19.08.44:837][307]MapCheck: New page: Map Check
-[2016.11.06-19.08.44:878][307]Cmd: MAP REBUILD ALLVISIBLE
-[2016.11.06-19.08.44:878][307]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2016.11.06-19.08.44:889][307]LightingResults: New page: Lighting Build - Nov 6, 2016, 9:08:44 PM
-[2016.11.06-19.08.44:900][307]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2016.11.06-19.08.44:901][307]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2016.11.06-19.08.44:901][307]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2016.11.06-19.08.44:903][307]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2016.11.06-19.08.44:903][307]LogSwarmInterface: [TryOpenConnection] Local Process ID is 3116
-[2016.11.06-19.08.49:415][307]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
-[2016.11.06-19.08.49:415][307]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2016.11.06-19.08.49:415][307]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2016.11.06-19.08.49:416][307]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2016.11.06-19.08.49:416][307]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2016.11.06-19.08.49:416][307]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2016.11.06-19.08.49:507][307]Cmd: MAP CHECK DONTDISPLAYDIALOG
-[2016.11.06-19.08.49:507][307]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:08:49 PM
-[2016.11.06-19.08.49:604][307]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 96.924ms to complete.
-[2016.11.06-19.08.49:626][307]LogEditorBuildUtils: Build time 0:04
-[2016.11.06-19.08.50:849][317]Job is a success!
-[2016.11.06-19.08.51:228][318]Lightmass on VM-WIN10X64-DEV: 791 ms total, 209 ms importing, 53 ms setup, 22 ms photons, 483 ms processing, 0 ms extra exporting [1/1 mappings]. Threads: 967 ms total, 45 ms processing.
-[2016.11.06-19.08.51:306][318]LogStaticLightingSystem: Illumination: 6.29 sec (0 ms encoding lightmaps, 0 ms encoding shadowmaps)
-[2016.11.06-19.08.51:306][318]LogStaticLightingSystem: Lightmap texture memory:  0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
-[2016.11.06-19.08.51:306][318]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
-[2016.11.06-19.08.51:424][319]Cmd: MAP CHECK NOTIFYRESULTS
-[2016.11.06-19.08.51:424][319]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:08:51 PM
-[2016.11.06-19.08.51:516][319]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 92.071ms to complete.
-[2016.11.06-19.08.55:961][450]Cmd: DELETE
-[2016.11.06-19.08.55:962][450]Cmd: ACTOR DELETE
-[2016.11.06-19.08.55:963][450]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.11.06-19.08.56:042][450]LogEditorActor: Deleted 1 Actors (0.080 secs)
-[2016.11.06-19.08.58:094][562]LogActorFactory: Actor Factory created Cube
-[2016.11.06-19.08.58:863][607]LogActorFactory: Actor Factory created Cube
-[2016.11.06-19.09.30:874][798]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2016.11.06-19.09.30:874][798]PIE: New page: PIE session: LevelSkeleton (Nov 6, 2016, 9:09:30 PM)
-[2016.11.06-19.09.30:874][798]LogPlayLevel: Creating play world package: /Game/TopDownBP/Maps/UEDPIE_0_LevelSkeleton
-[2016.11.06-19.09.30:875][798]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001554s)
-[2016.11.06-19.09.30:876][798]LogAIModule: Creating AISystem for world LevelSkeleton
-[2016.11.06-19.09.30:877][798]LogPlayLevel: PIE: World Init took: (0.001131s)
-[2016.11.06-19.09.30:877][798]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton to /Game/TopDownBP/Maps/UEDPIE_0_LevelSkeleton.LevelSkeleton (0.003101s)
-[2016.11.06-19.09.30:918][798]LogInit: XAudio2 using 'Haut-parleurs (Périphérique High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.11.06-19.09.30:931][798]LogInit: FAudioDevice initialized.
-[2016.11.06-19.09.30:994][798]LogWorld: Game class is 'TopDownGameMode_C'
-[2016.11.06-19.09.30:996][798]LogWorld: Bringing World /Game/TopDownBP/Maps/UEDPIE_0_LevelSkeleton.LevelSkeleton up for play (max tick rate 0) at 2016.11.06-20.09.30
-[2016.11.06-19.09.30:997][798]LogWorld: Bringing up level for play took: 0.002023
-[2016.11.06-19.09.31:003][798]PIE: Info Play in editor start time for /Game/TopDownBP/Maps/UEDPIE_0_LevelSkeleton 0.396
-[2016.11.06-19.09.36:018][ 30]MapCheck: New page: Map Check
-[2016.11.06-19.09.36:060][ 30]Cmd: MAP REBUILD ALLVISIBLE
-[2016.11.06-19.09.36:060][ 30]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2016.11.06-19.09.36:068][ 30]LightingResults: New page: Lighting Build - Nov 6, 2016, 9:09:36 PM
-[2016.11.06-19.09.36:079][ 30]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2016.11.06-19.09.36:079][ 30]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2016.11.06-19.09.36:080][ 30]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2016.11.06-19.09.36:081][ 30]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2016.11.06-19.09.36:081][ 30]LogSwarmInterface: [TryOpenConnection] Local Process ID is 3116
-[2016.11.06-19.09.45:119][ 30]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
-[2016.11.06-19.09.45:120][ 30]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2016.11.06-19.09.45:120][ 30]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2016.11.06-19.09.45:120][ 30]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2016.11.06-19.09.45:120][ 30]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2016.11.06-19.09.45:120][ 30]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2016.11.06-19.09.45:196][ 30]Cmd: MAP CHECK DONTDISPLAYDIALOG
-[2016.11.06-19.09.45:196][ 30]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:09:45 PM
-[2016.11.06-19.09.45:280][ 30]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 83.593ms to complete.
-[2016.11.06-19.09.45:302][ 30]LogEditorBuildUtils: Build time 0:09
-[2016.11.06-19.09.45:312][ 30]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Basic_Floor, compiling. 
-[2016.11.06-19.09.45:325][ 30]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer M_Basic_Floor, compiling. 
-[2016.11.06-19.09.47:451][ 32]LogEditorViewport: Clicking Background
-[2016.11.06-19.09.48:974][ 77]Job is a success!
-[2016.11.06-19.09.49:196][ 78]Lightmass on VM-WIN10X64-DEV: 736 ms total, 306 ms importing, 55 ms setup, 22 ms photons, 318 ms processing, 0 ms extra exporting [1/1 mappings]. Threads: 637 ms total, 31 ms processing.
-[2016.11.06-19.09.49:293][ 78]LogStaticLightingSystem: Illumination: 13.1 sec (0 ms encoding lightmaps, 0 ms encoding shadowmaps)
-[2016.11.06-19.09.49:293][ 78]LogStaticLightingSystem: Lightmap texture memory:  0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
-[2016.11.06-19.09.49:293][ 78]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
-[2016.11.06-19.09.50:128][ 79]Cmd: MAP CHECK NOTIFYRESULTS
-[2016.11.06-19.09.50:129][ 79]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:09:50 PM
-[2016.11.06-19.09.50:222][ 79]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 93.548ms to complete.
-[2016.11.06-19.09.50:227][ 79]LogEditorViewport: Clicking Background
-[2016.11.06-19.09.52:583][180]LogEditorViewport: Clicking Background
-[2016.11.06-19.09.53:752][259]LogEditorViewport: Clicking Background
-[2016.11.06-19.09.54:000][274]LogEditorViewport: Clicking Background
-[2016.11.06-19.10.43:683][670]LogSavePackage: Save=21.03ms
-[2016.11.06-19.10.43:683][670]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/LevelSkeleton93EA266145D6F9A00BC0B984D5A040DC.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap'
-[2016.11.06-19.10.43:691][670]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap
-[2016.11.06-19.10.47:333][843]LogAIModule: Creating AISystem for world Level1
-[2016.11.06-19.10.49:761][945]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.10.49:762][945]LightingResults: New page: Lighting Build
-[2016.11.06-19.10.49:762][945]LoadErrors: New page: Loading map: Level1.umap
-[2016.11.06-19.10.49:764][945]MapCheck: New page: Map Check
-[2016.11.06-19.10.49:764][945]LightingResults: New page: Lighting Build
-[2016.11.06-19.10.49:815][945]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.10.49:853][945]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.10.49:939][945]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 85.166ms to complete.
-[2016.11.06-19.10.49:940][945]LogFileHelpers: Loading map 'Level1' took 0.180
-[2016.11.06-19.10.51:889][989]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2016.11.06-19.11.02:012][242]LogAIModule: Creating AISystem for world LevelSkeleton
-[2016.11.06-19.11.02:071][242]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.11.02:071][242]LightingResults: New page: Lighting Build
-[2016.11.06-19.11.02:072][242]LoadErrors: New page: Loading map: LevelSkeleton.umap
-[2016.11.06-19.11.02:074][242]MapCheck: New page: Map Check
-[2016.11.06-19.11.02:074][242]LightingResults: New page: Lighting Build
-[2016.11.06-19.11.02:117][242]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.11.02:148][242]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.11.02:235][242]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 86.474ms to complete.
-[2016.11.06-19.11.02:236][242]LogFileHelpers: Loading map 'LevelSkeleton' took 0.166
-[2016.11.06-19.11.04:057][309]LogEditorViewport: Clicking Background
-[2016.11.06-19.11.04:578][338]LogEditorViewport: Clicking Background
-[2016.11.06-19.11.05:150][372]LogEditorViewport: Clicking Background
-[2016.11.06-19.11.17:604][807]MapCheck: New page: Map Check
-[2016.11.06-19.11.17:657][807]Cmd: MAP REBUILD ALLVISIBLE
-[2016.11.06-19.11.17:657][807]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2016.11.06-19.11.17:691][807]LightingResults: New page: Lighting Build - Nov 6, 2016, 9:11:17 PM
-[2016.11.06-19.11.17:702][807]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2016.11.06-19.11.17:702][807]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2016.11.06-19.11.17:703][807]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2016.11.06-19.11.17:705][807]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2016.11.06-19.11.17:705][807]LogSwarmInterface: [TryOpenConnection] Local Process ID is 3116
-[2016.11.06-19.11.22:218][807]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
-[2016.11.06-19.11.22:218][807]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2016.11.06-19.11.22:218][807]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2016.11.06-19.11.22:218][807]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2016.11.06-19.11.22:218][807]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2016.11.06-19.11.22:218][807]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2016.11.06-19.11.22:289][807]Cmd: MAP CHECK DONTDISPLAYDIALOG
-[2016.11.06-19.11.22:289][807]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:11:22 PM
-[2016.11.06-19.11.22:372][807]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 82.773ms to complete.
-[2016.11.06-19.11.22:395][807]LogEditorBuildUtils: Build time 0:04
-[2016.11.06-19.11.23:750][835]Job is a success!
-[2016.11.06-19.11.23:966][836]Lightmass on VM-WIN10X64-DEV: 697 ms total, 290 ms importing, 38 ms setup, 32 ms photons, 321 ms processing, 0 ms extra exporting [1/1 mappings]. Threads: 642 ms total, 35 ms processing.
-[2016.11.06-19.11.24:095][836]LogStaticLightingSystem: Illumination: 6.32 sec (0 ms encoding lightmaps, 0 ms encoding shadowmaps)
-[2016.11.06-19.11.24:095][836]LogStaticLightingSystem: Lightmap texture memory:  0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
-[2016.11.06-19.11.24:095][836]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
-[2016.11.06-19.11.24:231][837]Cmd: MAP CHECK NOTIFYRESULTS
-[2016.11.06-19.11.24:231][837]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:11:24 PM
-[2016.11.06-19.11.24:323][837]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 92.136ms to complete.
-[2016.11.06-19.11.39:619][223]LogSavePackage: Save=15.60ms
-[2016.11.06-19.11.39:619][223]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/LevelSkeleton11B999A94EB9B9129B96C8B5563FC01A.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap'
-[2016.11.06-19.11.39:624][223]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap
-[2016.11.06-19.11.39:672][223]LogFileHelpers: Saving map 'LevelSkeleton' took 0.226
-[2016.11.06-19.11.41:601][272]MapCheck: New page: Map Check
-[2016.11.06-19.11.41:643][272]Cmd: MAP REBUILD ALLVISIBLE
-[2016.11.06-19.11.41:643][272]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2016.11.06-19.11.41:654][272]LightingResults: New page: Lighting Build - Nov 6, 2016, 9:11:41 PM
-[2016.11.06-19.11.41:666][272]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2016.11.06-19.11.41:667][272]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2016.11.06-19.11.41:667][272]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2016.11.06-19.11.41:668][272]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2016.11.06-19.11.41:668][272]LogSwarmInterface: [TryOpenConnection] Local Process ID is 3116
-[2016.11.06-19.11.50:704][272]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
-[2016.11.06-19.11.50:704][272]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2016.11.06-19.11.50:704][272]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2016.11.06-19.11.50:704][272]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2016.11.06-19.11.50:704][272]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2016.11.06-19.11.50:704][272]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2016.11.06-19.11.50:777][272]Cmd: MAP CHECK DONTDISPLAYDIALOG
-[2016.11.06-19.11.50:778][272]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:11:50 PM
-[2016.11.06-19.11.50:863][272]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 85.587ms to complete.
-[2016.11.06-19.11.50:886][272]LogEditorBuildUtils: Build time 0:09
-[2016.11.06-19.11.52:771][317]Job is a success!
-[2016.11.06-19.11.53:002][319]Lightmass on VM-WIN10X64-DEV: 1.20 sec total, 687 ms importing, 80 ms setup, 43 ms photons, 382 ms processing, 0 ms extra exporting [1/1 mappings]. Threads: 765 ms total, 70 ms processing.
-[2016.11.06-19.11.53:146][319]LogStaticLightingSystem: Illumination: 11.4 sec (0 ms encoding lightmaps, 0 ms encoding shadowmaps)
-[2016.11.06-19.11.53:146][319]LogStaticLightingSystem: Lightmap texture memory:  0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
-[2016.11.06-19.11.53:146][319]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
-[2016.11.06-19.11.53:716][320]Cmd: MAP CHECK NOTIFYRESULTS
-[2016.11.06-19.11.53:717][320]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:11:53 PM
-[2016.11.06-19.11.53:813][320]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 97.037ms to complete.
-[2016.11.06-19.11.56:164][421]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
-[2016.11.06-19.12.14:918][377]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
-[2016.11.06-19.12.15:646][412]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
-[2016.11.06-19.12.20:647][609]LogSavePackage: Save=15.34ms
-[2016.11.06-19.12.20:648][609]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/LevelSkeleton7F8C8CB44CDF527832FB5191F14898CB.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap'
-[2016.11.06-19.12.20:652][609]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap
-[2016.11.06-19.12.21:776][647]LogAIModule: Creating AISystem for world Level1
-[2016.11.06-19.12.22:095][647]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.12.22:095][647]LightingResults: New page: Lighting Build
-[2016.11.06-19.12.22:097][647]LoadErrors: New page: Loading map: Level1.umap
-[2016.11.06-19.12.22:099][647]MapCheck: New page: Map Check
-[2016.11.06-19.12.22:099][647]LightingResults: New page: Lighting Build
-[2016.11.06-19.12.22:167][647]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.12.22:211][647]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.12.22:303][647]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 91.429ms to complete.
-[2016.11.06-19.12.22:304][647]LogFileHelpers: Loading map 'Level1' took 0.211
-[2016.11.06-19.12.23:739][685]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2016.11.06-19.12.40:564][180]LogAIModule: Creating AISystem for world LevelSkeleton
-[2016.11.06-19.12.40:619][180]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.12.40:619][180]LightingResults: New page: Lighting Build
-[2016.11.06-19.12.40:620][180]LoadErrors: New page: Loading map: LevelSkeleton.umap
-[2016.11.06-19.12.40:622][180]MapCheck: New page: Map Check
-[2016.11.06-19.12.40:623][180]LightingResults: New page: Lighting Build
-[2016.11.06-19.12.40:666][180]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.12.40:696][180]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.12.40:782][180]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 85.329ms to complete.
-[2016.11.06-19.12.40:783][180]LogFileHelpers: Loading map 'LevelSkeleton' took 0.166
-[2016.11.06-19.12.50:442][574]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
-[2016.11.06-19.12.51:702][640]Cmd: DELETE
-[2016.11.06-19.12.51:702][640]Cmd: ACTOR DELETE
-[2016.11.06-19.12.51:703][640]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.11.06-19.12.51:757][640]LogEditorActor: Deleted 1 Actors (0.056 secs)
-[2016.11.06-19.13.19:634][159]LogEditorViewport: Clicking Background
-[2016.11.06-19.13.20:755][224]Cmd: TRANSACTION UNDO
-[2016.11.06-19.13.20:755][224]LogEditorTransaction: Undo Clicking Background
-[2016.11.06-19.13.21:303][244]Cmd: TRANSACTION UNDO
-[2016.11.06-19.13.21:303][244]LogEditorTransaction: Undo Delete Actors
-[2016.11.06-19.13.23:390][340]LogEditorViewport: Clicking Background
-[2016.11.06-19.13.28:607][565]LogTexture:Display: Building textures: SimplygonLogo (AutoDXT)
-[2016.11.06-19.13.54:326][459]MapCheck: New page: Map Check
-[2016.11.06-19.13.54:393][459]Cmd: MAP REBUILD ALLVISIBLE
-[2016.11.06-19.13.54:393][459]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2016.11.06-19.13.54:409][459]LightingResults: New page: Lighting Build - Nov 6, 2016, 9:13:54 PM
-[2016.11.06-19.13.54:423][459]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2016.11.06-19.13.54:424][459]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2016.11.06-19.13.54:424][459]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2016.11.06-19.13.54:426][459]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2016.11.06-19.13.54:426][459]LogSwarmInterface: [TryOpenConnection] Local Process ID is 3116
-[2016.11.06-19.14.03:466][459]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
-[2016.11.06-19.14.03:466][459]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2016.11.06-19.14.03:466][459]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2016.11.06-19.14.03:466][459]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2016.11.06-19.14.03:466][459]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2016.11.06-19.14.03:467][459]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2016.11.06-19.14.03:540][459]Cmd: MAP CHECK DONTDISPLAYDIALOG
-[2016.11.06-19.14.03:541][459]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:14:03 PM
-[2016.11.06-19.14.03:541][459]MapCheck:Error: Error WorldSettings Maps need lighting rebuilt 
-[2016.11.06-19.14.03:628][459]MapCheck: Info Map check complete: 1 Error(s), 0 Warning(s), took 86.477ms to complete.
-[2016.11.06-19.14.03:649][459]LogEditorBuildUtils: Build time 0:09
-[2016.11.06-19.14.05:227][482]Job is a success!
-[2016.11.06-19.14.05:364][484]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
-[2016.11.06-19.14.05:364][484]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
-[2016.11.06-19.14.05:364][484]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8)
-[2016.11.06-19.14.05:440][484]LogStaticLightingSystem: Illumination: 10.9 sec (3 ms encoding lightmaps, 2 ms encoding shadowmaps)
-[2016.11.06-19.14.05:440][484]LogStaticLightingSystem: Lightmap texture memory:  0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 2 textures
-[2016.11.06-19.14.05:440][484]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 1 textures
-[2016.11.06-19.14.05:495][485]Cmd: MAP CHECK NOTIFYRESULTS
-[2016.11.06-19.14.05:495][485]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:14:05 PM
-[2016.11.06-19.14.05:586][485]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 90.162ms to complete.
-[2016.11.06-19.14.10:090][655]LogSavePackage: Save=18.77ms
-[2016.11.06-19.14.10:090][655]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/LevelSkeleton72EEB29A499588F1C598828FDEBBCE0D.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap'
-[2016.11.06-19.14.10:094][655]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap
-[2016.11.06-19.14.37:590][ 62]LogAIModule: Creating AISystem for world Level1
-[2016.11.06-19.15.57:557][978]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.15.57:557][978]LightingResults: New page: Lighting Build
-[2016.11.06-19.15.57:559][978]LoadErrors: New page: Loading map: Level1.umap
-[2016.11.06-19.15.57:560][978]MapCheck: New page: Map Check
-[2016.11.06-19.15.57:560][978]LightingResults: New page: Lighting Build
-[2016.11.06-19.15.57:611][978]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.15.57:657][978]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.15.57:743][978]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 85.603ms to complete.
-[2016.11.06-19.15.57:745][978]LogFileHelpers: Loading map 'Level1' took 0.189
-[2016.11.06-19.16.03:432][216]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2016.11.06-19.16.30:575][697]LogText:Warning: Failed to parse argument "ExistingAsset" as a number (using "0" as a fallback). Please check your format string for errors: "{ExistingAsset} already exists. Do you want to replace it?".
-[2016.11.06-19.16.34:150][697]LogSavePackage: Save=364.45ms
-[2016.11.06-19.16.34:150][697]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/LevelSkeletonBCCA3F4543979DECC34F78BC4C5955C0.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap'
-[2016.11.06-19.16.34:153][697]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap
-[2016.11.06-19.16.34:210][697]LogFileHelpers: Saving map 'LevelSkeleton' took 1.973
-[2016.11.06-19.16.38:606][869]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.16.38:607][869]LightingResults: New page: Lighting Build
-[2016.11.06-19.16.38:607][869]LoadErrors: New page: Loading map: LevelSkeleton.umap
-[2016.11.06-19.16.38:610][869]MapCheck: New page: Map Check
-[2016.11.06-19.16.38:610][869]LightingResults: New page: Lighting Build
-[2016.11.06-19.16.38:808][869]LogAIModule: Creating AISystem for world LevelSkeleton
-[2016.11.06-19.16.38:818][869]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.16.38:859][869]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.16.38:949][869]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 90.262ms to complete.
-[2016.11.06-19.16.38:950][869]LogFileHelpers: Loading map 'LevelSkeleton' took 0.345
-[2016.11.06-19.16.40:637][904]LogAIModule: Creating AISystem for world Level1
-[2016.11.06-19.16.40:735][904]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.16.40:735][904]LightingResults: New page: Lighting Build
-[2016.11.06-19.16.40:736][904]LoadErrors: New page: Loading map: Level1.umap
-[2016.11.06-19.16.40:738][904]MapCheck: New page: Map Check
-[2016.11.06-19.16.40:738][904]LightingResults: New page: Lighting Build
-[2016.11.06-19.16.40:791][904]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.16.40:823][904]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.16.40:914][904]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 91.088ms to complete.
-[2016.11.06-19.16.40:915][904]LogFileHelpers: Loading map 'Level1' took 0.181
-[2016.11.06-19.16.42:960][960]LogAIModule: Creating AISystem for world LevelSkeleton
-[2016.11.06-19.16.43:062][960]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.16.43:062][960]LightingResults: New page: Lighting Build
-[2016.11.06-19.16.43:063][960]LoadErrors: New page: Loading map: LevelSkeleton.umap
-[2016.11.06-19.16.43:065][960]MapCheck: New page: Map Check
-[2016.11.06-19.16.43:065][960]LightingResults: New page: Lighting Build
-[2016.11.06-19.16.43:119][960]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.16.43:152][960]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.16.43:243][960]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 90.657ms to complete.
-[2016.11.06-19.16.43:244][960]LogFileHelpers: Loading map 'LevelSkeleton' took 0.184
-[2016.11.06-19.16.45:611][ 10]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube30)
-[2016.11.06-19.16.46:779][ 58]Cmd: DELETE
-[2016.11.06-19.16.46:779][ 58]Cmd: ACTOR DELETE
-[2016.11.06-19.16.46:781][ 58]LogEditorActor: Deleted Actor: StaticMeshActor
-[2016.11.06-19.16.46:846][ 58]LogEditorActor: Deleted 1 Actors (0.066 secs)
-[2016.11.06-19.16.52:016][248]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2016.11.06-19.16.57:828][432]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2016.11.06-19.16.58:555][461]LogEditorViewport: Clicking on Actor (LMB): TextRenderActor (LevelLabel)
-[2016.11.06-19.17.07:703][810]MapCheck: New page: Map Check
-[2016.11.06-19.17.07:770][810]Cmd: MAP REBUILD ALLVISIBLE
-[2016.11.06-19.17.07:770][810]LogEditorServer: Rebuildmap Clear paths rebuilt
-[2016.11.06-19.17.07:841][810]LightingResults: New page: Lighting Build - Nov 6, 2016, 9:17:07 PM
-[2016.11.06-19.17.07:852][810]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
-[2016.11.06-19.17.07:853][810]LogSwarmInterface: [OpenConnection] Connecting to agent ...
-[2016.11.06-19.17.07:854][810]LogSwarmInterface: [TryOpenConnection] Testing the Agent
-[2016.11.06-19.17.07:855][810]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
-[2016.11.06-19.17.07:855][810]LogSwarmInterface: [TryOpenConnection] Local Process ID is 3116
-[2016.11.06-19.17.12:369][810]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
-[2016.11.06-19.17.12:370][810]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
-[2016.11.06-19.17.12:370][810]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
-[2016.11.06-19.17.12:370][810]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
-[2016.11.06-19.17.12:370][810]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
-[2016.11.06-19.17.12:812][810]Cmd: MAP CHECK DONTDISPLAYDIALOG
-[2016.11.06-19.17.12:812][810]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:17:12 PM
-[2016.11.06-19.17.12:902][810]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 90.377ms to complete.
-[2016.11.06-19.17.12:925][810]LogEditorBuildUtils: Build time 0:05
-[2016.11.06-19.17.15:151][833]LogSavePackage: Save=397.74ms
-[2016.11.06-19.17.15:151][833]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/LevelSkeleton585EFAB848826E80603ED2BDDA67F6A7.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap'
-[2016.11.06-19.17.15:157][833]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap
-[2016.11.06-19.18.20:708][655]Job is a success!
-[2016.11.06-19.18.22:043][656]LogTexture:Display: Building textures: SkyOcclusion1_1 (AutoDXT)
-[2016.11.06-19.18.22:043][656]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
-[2016.11.06-19.18.22:043][656]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1)
-[2016.11.06-19.18.22:043][656]LogTexture:Display: Building textures: SkyOcclusion0_2 (AutoDXT)
-[2016.11.06-19.18.22:043][656]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
-[2016.11.06-19.18.22:043][656]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1)
-[2016.11.06-19.18.22:201][656]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (G8)
-[2016.11.06-19.18.22:201][656]LogTexture:Display: Building textures: ShadowMapTexture2D_3 (G8)
-[2016.11.06-19.18.22:284][656]LogStaticLightingSystem: Illumination: 1:14 min (806 ms encoding lightmaps, 157 ms encoding shadowmaps)
-[2016.11.06-19.18.22:284][656]LogStaticLightingSystem: Lightmap texture memory:  2.7 MB (2.7 MB streaming, 0.0 MB non-streaming), 4 textures
-[2016.11.06-19.18.22:284][656]LogStaticLightingSystem: Shadowmap texture memory: 0.7 MB (0.7 MB streaming, 0.0 MB non-streaming), 2 textures
-[2016.11.06-19.18.22:888][657]Cmd: MAP CHECK NOTIFYRESULTS
-[2016.11.06-19.18.22:889][657]MapCheck: New page: LevelSkeleton - Nov 6, 2016, 9:18:22 PM
-[2016.11.06-19.18.23:042][657]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 153.187ms to complete.
-[2016.11.06-19.18.30:035][758]LogSavePackage: Save=544.48ms
-[2016.11.06-19.18.30:035][758]LogSavePackage: Moving '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Saved/LevelSkeleton0404008C4B363B8A8112BA8605F689B5.tmp' to '../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap'
-[2016.11.06-19.18.30:040][758]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap
-[2016.11.06-19.18.37:703][ 91]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
-[2016.11.06-19.18.38:099][ 91]LogTexture:Display: Building textures: HQ_Lightmap0_3 (AutoDXT)
-[2016.11.06-19.18.38:115][ 91]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
-[2016.11.06-19.18.38:267][ 91]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1)
-[2016.11.06-19.18.38:281][ 91]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT)
-[2016.11.06-19.18.38:539][ 91]LogTexture:Display: Building textures: SkyOcclusion0_3 (AutoDXT)
-[2016.11.06-19.18.38:555][ 91]LogAIModule: Creating AISystem for world Level1
-[2016.11.06-19.18.38:661][ 91]Cmd: MAP LOAD FILE="../../../../../../Users/admin/Desktop/GameOff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=2
-[2016.11.06-19.18.38:661][ 91]LightingResults: New page: Lighting Build
-[2016.11.06-19.18.38:662][ 91]LoadErrors: New page: Loading map: Level1.umap
-[2016.11.06-19.18.38:666][ 91]MapCheck: New page: Map Check
-[2016.11.06-19.18.38:666][ 91]LightingResults: New page: Lighting Build
-[2016.11.06-19.18.38:722][ 91]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.11.06-19.18.38:755][ 91]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.11.06-19.18.38:846][ 91]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 90.746ms to complete.
-[2016.11.06-19.18.38:848][ 91]LogFileHelpers: Loading map 'Level1' took 0.188
-[2016.11.06-19.18.51:512][689]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2016.11.06-19.18.51:756][690]Cmd: QUIT_EDITOR
-[2016.11.06-19.18.52:467][690]LogExit: Preparing to exit.
-[2016.11.06-19.18.53:023][690]LogExit: Editor shut down
-[2016.11.06-19.18.53:023][690]LogExit: Transaction tracking system shut down
-[2016.11.06-19.18.53:389][690]LogObj: Freed 0b from 0 cluster array pools.
-[2016.11.06-19.18.53:389][690]LogExit: Object subsystem successfully closed.
-[2016.11.06-19.18.53:444][690]LogD3D11RHI: Shutdown
-[2016.11.06-19.18.53:444][690]LogD3D11RHI: CleanupD3DDevice
-[2016.11.06-19.18.54:065][690]LogD3D11RHI: ~FD3D11DynamicRHI
-[2016.11.06-19.18.54:331][690]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (217)
-[2016.11.06-19.18.54:331][690]LogModuleManager: Shutting down and abandoning module BlueprintGraph (216)
-[2016.11.06-19.18.54:331][690]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (215)
-[2016.11.06-19.18.54:352][690]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (214)
-[2016.11.06-19.18.54:352][690]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
-[2016.11.06-19.18.54:371][690]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
-[2016.11.06-19.18.54:371][690]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
-[2016.11.06-19.18.54:371][690]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
-[2016.11.06-19.18.54:371][690]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
-[2016.11.06-19.18.54:373][690]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
-[2016.11.06-19.18.54:373][690]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
-[2016.11.06-19.18.54:373][690]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
-[2016.11.06-19.18.54:374][690]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
-[2016.11.06-19.18.54:386][690]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
-[2016.11.06-19.18.54:386][690]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
-[2016.11.06-19.18.54:396][690]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
-[2016.11.06-19.18.54:396][690]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
-[2016.11.06-19.18.54:396][690]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
-[2016.11.06-19.18.54:396][690]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
-[2016.11.06-19.18.54:396][690]LogModuleManager: Shutting down and abandoning module BspMode (198)
-[2016.11.06-19.18.54:396][690]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
-[2016.11.06-19.18.54:396][690]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
-[2016.11.06-19.18.54:396][690]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
-[2016.11.06-19.18.54:396][690]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
-[2016.11.06-19.18.54:397][690]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
-[2016.11.06-19.18.54:397][690]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
-[2016.11.06-19.18.54:410][690]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
-[2016.11.06-19.18.54:410][690]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
-[2016.11.06-19.18.54:410][690]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
-[2016.11.06-19.18.54:410][690]LogModuleManager: Shutting down and abandoning module SessionServices (188)
-[2016.11.06-19.18.54:410][690]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
-[2016.11.06-19.18.54:410][690]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
-[2016.11.06-19.18.54:411][690]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
-[2016.11.06-19.18.54:421][690]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
-[2016.11.06-19.18.54:421][690]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
-[2016.11.06-19.18.54:421][690]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
-[2016.11.06-19.18.54:422][690]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
-[2016.11.06-19.18.54:422][690]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
-[2016.11.06-19.18.55:031][690]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
-[2016.11.06-19.18.55:031][690]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
-[2016.11.06-19.18.55:032][690]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
-[2016.11.06-19.18.55:032][690]LogModuleManager: Shutting down and abandoning module MergeActors (176)
-[2016.11.06-19.18.55:046][690]LogModuleManager: Shutting down and abandoning module SizeMap (175)
-[2016.11.06-19.18.55:046][690]LogModuleManager: Shutting down and abandoning module TreeMap (174)
-[2016.11.06-19.18.55:076][690]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
-[2016.11.06-19.18.55:077][690]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
-[2016.11.06-19.18.55:077][690]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
-[2016.11.06-19.18.55:081][690]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
-[2016.11.06-19.18.55:081][690]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
-[2016.11.06-19.18.55:103][690]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
-[2016.11.06-19.18.55:104][690]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
-[2016.11.06-19.18.55:104][690]LogModuleManager: Shutting down and abandoning module XmlParser (166)
-[2016.11.06-19.18.55:104][690]LogModuleManager: Shutting down and abandoning module Blutility (165)
-[2016.11.06-19.18.55:104][690]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
-[2016.11.06-19.18.55:104][690]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
-[2016.11.06-19.18.55:104][690]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
-[2016.11.06-19.18.55:105][690]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
-[2016.11.06-19.18.55:105][690]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
-[2016.11.06-19.18.55:125][690]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
-[2016.11.06-19.18.55:137][690]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
-[2016.11.06-19.18.55:146][690]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
-[2016.11.06-19.18.55:147][690]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
-[2016.11.06-19.18.55:147][690]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
-[2016.11.06-19.18.55:197][690]LogModuleManager: Shutting down and abandoning module AutomationController (154)
-[2016.11.06-19.18.55:197][690]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
-[2016.11.06-19.18.55:211][690]LogModuleManager: Shutting down and abandoning module Layers (152)
-[2016.11.06-19.18.55:229][690]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
-[2016.11.06-19.18.55:229][690]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
-[2016.11.06-19.18.55:229][690]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
-[2016.11.06-19.18.55:229][690]LogModuleManager: Shutting down and abandoning module Persona (148)
-[2016.11.06-19.18.55:249][690]LogModuleManager: Shutting down and abandoning module Kismet (147)
-[2016.11.06-19.18.55:249][690]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
-[2016.11.06-19.18.55:249][690]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
-[2016.11.06-19.18.55:250][690]LogModuleManager: Shutting down and abandoning module Toolbox (144)
-[2016.11.06-19.18.55:250][690]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
-[2016.11.06-19.18.55:258][690]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
-[2016.11.06-19.18.55:261][690]LogModuleManager: Shutting down and abandoning module OutputLog (141)
-[2016.11.06-19.18.55:261][690]LogModuleManager: Shutting down and abandoning module GammaUI (140)
-[2016.11.06-19.18.55:274][690]LogModuleManager: Shutting down and abandoning module Documentation (139)
-[2016.11.06-19.18.55:274][690]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
-[2016.11.06-19.18.55:274][690]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
-[2016.11.06-19.18.55:274][690]LogModuleManager: Shutting down and abandoning module Analytics (136)
-[2016.11.06-19.18.55:274][690]LogModuleManager: Shutting down and abandoning module PortalServices (135)
-[2016.11.06-19.18.55:274][690]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
-[2016.11.06-19.18.55:274][690]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
-[2016.11.06-19.18.55:274][690]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
-[2016.11.06-19.18.55:274][690]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
-[2016.11.06-19.18.55:274][690]LogModuleManager: Shutting down and abandoning module AIModule (130)
-[2016.11.06-19.18.55:274][690]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
-[2016.11.06-19.18.55:505][690]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
-[2016.11.06-19.18.55:532][690]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
-[2016.11.06-19.18.55:532][690]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
-[2016.11.06-19.18.55:532][690]LogModuleManager: Shutting down and abandoning module SteamVR (125)
-[2016.11.06-19.18.55:532][690]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
-[2016.11.06-19.18.55:532][690]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
-[2016.11.06-19.18.55:532][690]LogModuleManager: Shutting down and abandoning module OculusInput (122)
-[2016.11.06-19.18.55:532][690]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
-[2016.11.06-19.18.55:532][690]LogModuleManager: Shutting down and abandoning module CableComponent (120)
-[2016.11.06-19.18.55:532][690]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
-[2016.11.06-19.18.55:532][690]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module SourceControl (106)
-[2016.11.06-19.18.55:533][690]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
-[2016.11.06-19.18.55:534][690]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
-[2016.11.06-19.18.55:534][690]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
-[2016.11.06-19.18.55:534][690]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
-[2016.11.06-19.18.55:534][690]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
-[2016.11.06-19.18.55:534][690]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
-[2016.11.06-19.18.55:534][690]LogModuleManager: Shutting down and abandoning module HotReload (99)
-[2016.11.06-19.18.55:535][690]LogModuleManager: Shutting down and abandoning module MainFrame (98)
-[2016.11.06-19.18.55:535][690]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
-[2016.11.06-19.18.55:536][690]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
-[2016.11.06-19.18.55:537][690]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
-[2016.11.06-19.18.55:538][690]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module Paper2D (92)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module Media (90)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module VREditor (84)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
-[2016.11.06-19.18.55:640][690]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
-[2016.11.06-19.18.55:654][690]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
-[2016.11.06-19.18.55:655][690]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
-[2016.11.06-19.18.55:675][690]LogModuleManager: Shutting down and abandoning module Sequencer (78)
-[2016.11.06-19.18.55:701][690]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
-[2016.11.06-19.18.55:701][690]LogModuleManager: Shutting down and abandoning module MessageLog (76)
-[2016.11.06-19.18.55:701][690]LogModuleManager: Shutting down and abandoning module AssetTools (75)
-[2016.11.06-19.18.55:701][690]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
-[2016.11.06-19.18.55:716][690]LogModuleManager: Shutting down and abandoning module UMG (73)
-[2016.11.06-19.18.55:723][690]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
-[2016.11.06-19.18.55:724][690]LogModuleManager: Shutting down and abandoning module Slate (71)
-[2016.11.06-19.18.55:724][690]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
-[2016.11.06-19.18.55:727][690]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
-[2016.11.06-19.18.55:727][690]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
-[2016.11.06-19.18.55:727][690]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
-[2016.11.06-19.18.55:727][690]LogModuleManager: Shutting down and abandoning module Networking (65)
-[2016.11.06-19.18.55:727][690]LogModuleManager: Shutting down and abandoning module Core (64)
-[2016.11.06-19.18.55:727][690]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
-[2016.11.06-19.18.55:728][690]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
-[2016.11.06-19.18.55:895][690]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
-[2016.11.06-19.18.55:895][690]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
-[2016.11.06-19.18.55:895][690]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
-[2016.11.06-19.18.55:909][690]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
-[2016.11.06-19.18.55:990][690]LogDerivedDataCache: Shutdown
-[2016.11.06-19.18.55:990][690]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
-[2016.11.06-19.18.55:991][690]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
-[2016.11.06-19.18.56:003][690]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
-[2016.11.06-19.18.56:003][690]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
-[2016.11.06-19.18.56:012][690]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
-[2016.11.06-19.18.56:012][690]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
-[2016.11.06-19.18.56:012][690]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
-[2016.11.06-19.18.56:012][690]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
-[2016.11.06-19.18.56:012][690]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
-[2016.11.06-19.18.56:012][690]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
-[2016.11.06-19.18.56:012][690]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
-[2016.11.06-19.18.56:012][690]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module Messaging (39)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
-[2016.11.06-19.18.56:028][690]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
-[2016.11.06-19.18.56:029][690]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
-[2016.11.06-19.18.56:029][690]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
-[2016.11.06-19.18.56:029][690]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
-[2016.11.06-19.18.56:029][690]LogModuleManager: Shutting down and abandoning module InputCore (22)
-[2016.11.06-19.18.56:029][690]LogModuleManager: Shutting down and abandoning module Settings (21)
-[2016.11.06-19.18.56:029][690]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
-[2016.11.06-19.18.56:029][690]LogModuleManager: Shutting down and abandoning module HTTP (18)
-[2016.11.06-19.19.00:544][690]LogModuleManager: Shutting down and abandoning module XMPP (17)
-[2016.11.06-19.19.00:545][690]LogModuleManager: Shutting down and abandoning module OculusRift (16)
-[2016.11.06-19.19.00:570][690]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
-[2016.11.06-19.19.00:570][690]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
-[2016.11.06-19.19.00:570][690]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
-[2016.11.06-19.19.00:570][690]LogModuleManager: Shutting down and abandoning module Landscape (12)
-[2016.11.06-19.19.00:570][690]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
-[2016.11.06-19.19.00:574][690]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
-[2016.11.06-19.19.00:581][690]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
-[2016.11.06-19.19.00:581][690]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
-[2016.11.06-19.19.00:581][690]LogModuleManager: Shutting down and abandoning module Renderer (7)
-[2016.11.06-19.19.00:581][690]LogModuleManager: Shutting down and abandoning module Engine (6)
-[2016.11.06-19.19.00:581][690]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
-[2016.11.06-19.19.00:581][690]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
-[2016.11.06-19.19.00:581][690]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
-[2016.11.06-19.19.00:581][690]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
-[2016.11.06-19.19.00:581][690]LogModuleManager: Shutting down and abandoning module PakFile (1)
-[2016.11.06-19.19.00:585][690]LogExit: Exiting.
-[2016.11.06-19.19.00:600][690]Log file closed, 11/06/16 20:19:00
+[2016.11.06-20.10.27:448][  0]LogInit: Selected Device Profile: [Windows]
+[2016.11.06-20.10.27:448][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.11.06-20.10.27:459][  0]LogInit: Computer: PCENZO
+[2016.11.06-20.10.27:459][  0]LogInit: User: Enzo
+[2016.11.06-20.10.27:459][  0]LogInit: CPU Page size=65536, Cores=6
+[2016.11.06-20.10.27:459][  0]LogInit: High frequency timer resolution =3.222685 MHz
+[2016.11.06-20.10.27:459][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2016.11.06-20.10.27:459][  0]LogMemory: Platform Memory Stats for Windows
+[2016.11.06-20.10.27:459][  0]LogMemory: Process Physical Memory: 193.23 MB used, 193.23 MB peak
+[2016.11.06-20.10.27:459][  0]LogMemory: Process Virtual Memory: 198.27 MB used, 198.27 MB peak
+[2016.11.06-20.10.27:459][  0]LogMemory: Physical Memory: 6031.04 MB used, 16279.32 MB total
+[2016.11.06-20.10.27:459][  0]LogMemory: Virtual Memory: 523.13 MB used, 8388608.00 MB total
+[2016.11.06-20.10.27:518][  0]LogTextLocalizationManager: No translations for ('fr-CH') exist, falling back to 'en' for localization and internationalization data.
+[2016.11.06-20.10.28:023][  0]LogD3D11RHI: D3D11 adapters:
+[2016.11.06-20.10.28:040][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.11.06-20.10.28:040][  0]LogD3D11RHI:       4007/0/7883 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2016.11.06-20.10.28:040][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.11.06-20.10.28:056][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.11.06-20.10.28:056][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2016.11.06-20.10.28:056][  0]LogWindows: EnumDisplayDevices:
+[2016.11.06-20.10.28:056][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2016.11.06-20.10.28:056][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2016.11.06-20.10.28:056][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2016.11.06-20.10.28:056][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2016.11.06-20.10.28:057][  0]LogWindows:    4. 'RDPDD Chained DD' (P:0 D:0)
+[2016.11.06-20.10.28:057][  0]LogWindows:    5. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2016.11.06-20.10.28:057][  0]LogWindows:    6. 'RDP Reflector Display Driver' (P:0 D:0)
+[2016.11.06-20.10.28:057][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2016.11.06-20.10.28:057][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.11.06-20.10.28:057][  0]LogD3D11RHI:   Driver Version: 372.90 (internal:21.21.13.7290, unified:372.90)
+[2016.11.06-20.10.28:057][  0]LogD3D11RHI:      Driver Date: 9-16-2016
+[2016.11.06-20.10.28:057][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.11.06-20.10.28:066][  0]LogD3D11RHI: Async texture creation enabled
+[2016.11.06-20.10.28:080][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.11.06-20.10.28:080][  0]LogShaderCompilers: Guid format shader working directory is -12 characters bigger than the processId version (../../../../../../Documents/gameoff2016/IncreaseYourMind/Intermediate/Shaders/WorkingDirectory/13740/).
+[2016.11.06-20.10.28:080][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Enzo/AppData/Local/Temp/UnrealShaderWorkingDir/48F23D5D4F4E71BE17C4D7AA155019C6/'.
+[2016.11.06-20.10.28:080][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.11.06-20.10.29:051][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.11.06-20.10.29:065][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.11.06-20.10.29:074][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.11.06-20.10.29:088][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.11.06-20.10.29:108][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.11.06-20.10.29:120][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.11.06-20.10.29:132][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.11.06-20.10.29:141][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.11.06-20.10.29:150][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.11.06-20.10.29:159][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.11.06-20.10.29:172][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.11.06-20.10.29:187][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.11.06-20.10.29:187][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.11.06-20.10.29:187][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.11.06-20.10.29:211][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.11.06-20.10.29:217][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.11.06-20.10.29:225][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.11.06-20.10.29:232][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.11.06-20.10.29:242][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.11.06-20.10.29:242][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.11.06-20.10.29:341][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.11.06-20.10.29:393][  0]LogDerivedDataCache: Loaded boot cache 0.05s 48MB C:/Users/Enzo/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.11.06-20.10.29:393][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Enzo/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.11.06-20.10.29:393][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Documents/gameoff2016/IncreaseYourMind/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.11.06-20.10.29:393][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.11.06-20.10.29:393][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Documents/gameoff2016/IncreaseYourMind/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.11.06-20.10.29:393][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.11.06-20.10.29:412][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.11.06-20.10.29:423][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Enzo/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.11.06-20.10.29:701][  0]LogInit: Selected Device Profile: [Windows]
+[2016.11.06-20.10.29:702][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.11.06-20.10.29:881][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.11.06-20.10.29:881][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.11.06-20.10.29:881][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.11.06-20.10.30:156][  0]LogAssetRegistry: FAssetRegistry took 0.0202 seconds to start up
+[2016.11.06-20.10.30:171][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.010619 seconds
+[2016.11.06-20.10.30:176][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.11.06-20.10.30:176][  0]LogUObjectAllocator: 5855632 out of 0 bytes used by permanent object pool.
+[2016.11.06-20.10.30:176][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.11.06-20.10.30:186][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.11.06-20.10.30:375][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.11.06-20.10.30:375][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.11.06-20.10.31:135][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.11.06-20.10.31:375][  0]SourceControl: Info Source control is disabled
+[2016.11.06-20.10.31:417][  0]SourceControl: Info Source control is disabled
+[2016.11.06-20.10.31:425][  0]SourceControl: Info Source control is disabled
+[2016.11.06-20.10.31:435][  0]SourceControl: Info Source control is disabled
+[2016.11.06-20.10.31:685][  0]LogEngine: Initializing Engine...
+[2016.11.06-20.10.31:687][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.11.06-20.10.31:687][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.11.06-20.10.31:901][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.11.06-20.10.31:919][  0]LogInit: XAudio2 using 'Haut-parleurs (8- USB PnP Sound Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.11.06-20.10.31:927][  0]LogInit: FAudioDevice initialized.
+[2016.11.06-20.10.31:961][  0]LogDerivedDataCache: Saved boot cache 0.03s 48MB C:/Users/Enzo/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.11.06-20.10.31:967][  0]LogInit: Texture streaming: Enabled
+[2016.11.06-20.10.31:999][  0]LogInit: Transaction tracking system initialized
+[2016.11.06-20.10.32:025][  0]BlueprintLog: New page: Editor Load
+[2016.11.06-20.10.32:112][  0]LocalizationService: Info Localization service is disabled
+[2016.11.06-20.10.32:193][  0]LogConsoleResponse:Display: 
+[2016.11.06-20.10.32:307][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.11.06-20.10.32:307][  0]LogCook:Display: Mobile HDR setting 1
+[2016.11.06-20.10.32:417][  0]LogFileCache: Scanning file cache for directory 'E:/Documents/gameoff2016/IncreaseYourMind/Content/' took 0.01s
+[2016.11.06-20.10.32:417][  0]SourceControl: Info Source control is disabled
+[2016.11.06-20.10.32:417][  0]Cmd: MAP LOAD FILE="../../../../../../Documents/gameoff2016/IncreaseYourMind/Content/TopDownBP/Maps/TopDownExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.11.06-20.10.32:417][  0]LogEditorServer:Warning: Can't find file '../../../../../../Documents/gameoff2016/IncreaseYourMind/Content/TopDownBP/Maps/TopDownExampleMap.umap'
+[2016.11.06-20.10.32:417][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.11.06-20.10.32:456][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 38.73ms to complete.
+[2016.11.06-20.10.32:456][  0]LogFileHelpers: Loading map 'TopDownExampleMap' took 0.039
+[2016.11.06-20.10.32:905][  0]LogCollectionManager: Loaded 0 collections in 0.004966 seconds
+[2016.11.06-20.10.33:049][  0]LogFileCache: Scanning file cache for directory 'E:/Documents/gameoff2016/IncreaseYourMind/Saved/Collections/' took 0.01s
+[2016.11.06-20.10.33:049][  0]LogFileCache: Scanning file cache for directory 'E:/Documents/gameoff2016/IncreaseYourMind/Content/Developers/Enzo/Collections/' took 0.01s
+[2016.11.06-20.10.33:049][  0]LogFileCache: Scanning file cache for directory 'E:/Documents/gameoff2016/IncreaseYourMind/Content/Collections/' took 0.01s
+[2016.11.06-20.10.33:049][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000005 seconds
+[2016.11.06-20.10.33:076][  0]LogContentBrowser: Native class hierarchy populated in 0.0213 seconds. Added 2047 classes and 369 folders.
+[2016.11.06-20.10.33:113][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.004 s
+[2016.11.06-20.10.33:114][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.001 s
+[2016.11.06-20.10.33:115][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0010 seconds. Added 12 classes and 0 folders.
+[2016.11.06-20.10.33:150][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.11.06-20.10.33:539][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2016.11.06-20.10.36:111][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0009 seconds. Added 1 classes and 2 folders.
+[2016.11.06-20.10.36:315][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.11.06-20.10.36:439][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0009 seconds. Added 1 classes and 2 folders.
+[2016.11.06-20.10.36:439][  0]LogLoad: Full Startup: 9.89 seconds (BP compile: 0.00 seconds)
+[2016.11.06-20.10.36:439][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.11.06-20.10.36:439][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.11.06-20.10.36:449][  0]LogOcInput: OculusInput pre-init called
+[2016.11.06-20.10.36:523][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.11.06-20.10.36:856][  0]LogRenderer: Reallocating scene render targets to support 1208x576 (Frame:2).
+[2016.11.06-20.10.37:006][  2]LogAssetRegistry: Asset discovery search completed in 6.8712 seconds
+[2016.11.06-20.10.37:006][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.11.06-20.10.37:006][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000022 seconds (updated 0 objects)
+[2016.11.06-20.10.51:658][541]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.11.06-20.10.51:676][541]PIE: New page: PIE session: Untitled_0 (Nov 6, 2016, 10:10:51 PM)
+[2016.11.06-20.10.51:676][541]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_0
+[2016.11.06-20.10.51:677][541]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000778s)
+[2016.11.06-20.10.51:678][541]LogAIModule: Creating AISystem for world NewWorld
+[2016.11.06-20.10.51:678][541]LogPlayLevel: PIE: World Init took: (0.000930s)
+[2016.11.06-20.10.51:678][541]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_0.NewWorld to /Temp/UEDPIE_0_Untitled_0.NewWorld (0.002021s)
+[2016.11.06-20.10.51:716][541]LogInit: XAudio2 using 'Haut-parleurs (8- USB PnP Sound Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.11.06-20.10.51:720][541]LogInit: FAudioDevice initialized.
+[2016.11.06-20.10.52:517][541]LogTexture:Display: Building textures: UE4_Mannequin_MAT_MASKA (AutoDXT)
+[2016.11.06-20.10.52:699][541]LogTexture:Display: Building textures: T_ML_Rubber_Blue_01_D (AutoDXT)
+[2016.11.06-20.10.52:813][541]LogTexture:Display: Building textures: T_ML_Rubber_Blue_01_N (BC5)
+[2016.11.06-20.10.52:845][541]LogTexture:Display: Building textures: T_ML_Aluminum01 (AutoDXT)
+[2016.11.06-20.10.52:953][541]LogTexture:Display: Building textures: T_ML_Aluminum01_N (BC5)
+[2016.11.06-20.10.53:138][541]LogTexture:Display: Building textures: UE4_Mannequin__normals (BC5)
+[2016.11.06-20.10.53:627][541]LogTexture:Display: Building textures: UE4_LOGO_CARD (AutoDXT)
+[2016.11.06-20.10.53:739][541]LogTexture:Display: Building textures: UE4Man_Logo_N (BC5)
+[2016.11.06-20.10.53:789][541]LogWorld: Game class is 'TopDownGameMode_C'
+[2016.11.06-20.10.53:812][541]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_0.NewWorld up for play (max tick rate 0) at 2016.11.06-21.10.53
+[2016.11.06-20.10.53:813][541]LogWorld: Bringing up level for play took: 0.002101
+[2016.11.06-20.10.53:919][541]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0010 seconds. Added 11 classes and 0 folders.
+[2016.11.06-20.10.54:035][541]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_0 3.329
+[2016.11.06-20.11.17:522][310]MapCheck: New page: Map Check
+[2016.11.06-20.11.17:560][310]Cmd: MAP REBUILD ALLVISIBLE
+[2016.11.06-20.11.17:560][310]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2016.11.06-20.11.17:614][310]LightingResults: New page: Lighting Build - Nov 6, 2016, 10:11:17 PM
+[2016.11.06-20.11.17:620][310]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0004 seconds. Added 5 classes and 0 folders.
+[2016.11.06-20.11.17:751][310]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.11.06-20.11.19:953][310]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.11.06-20.11.19:976][310]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.11.06-20.11.22:002][310]LogSwarmInterface:Error: [TryOpenConnection] Waiting for the agent to start up ...
+[2016.11.06-20.11.22:035][310]LogSwarmInterface:Error: System.Net.Sockets.SocketException (0x80004005): Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée 127.0.0.1:8008
+
+Server stack trace: 
+   à System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   à System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   à System.Runtime.Remoting.Channels.RemoteConnection.CreateNewSocket(EndPoint ipEndPoint)
+   à System.Runtime.Remoting.Channels.SocketCache.GetSocket(String machinePortAndSid, Boolean openNew)
+   à System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.SendRequestWithRetry(IMessage msg, ITransportHeaders requestHeaders, Stream requestStream)
+   à System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSink.AsyncProcessRequest(IClientChannelSinkStack sinkStack, IMessage msg, ITransportHeaders headers, Stream stream)
+   à System.Runtime.Remoting.Channels.BinaryClientFormatterSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink)
+
+Exception rethrown at [0]: 
+   à System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   à System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   à NSwarm.IAgentInterfaceWrapper.MethodDelegate.EndInvoke(Hashtable& OutParameters, IAsyncResult result)
+   à NSwarm.FSwarmInterface.TryOpenConnection(FConnectionCallback CallbackFunc, IntPtr CallbackData, ELogFlags LoggingFlags) dans i:\Perforce2\UE4-Orion\Engine\Source\Editor\SwarmInterface\DotNET\SwarmInterface.cs:ligne 2811
+[2016.11.06-20.11.27:054][310]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.11.06-20.11.27:055][310]LogSwarmInterface: [TryOpenConnection] Local Process ID is 13740
+[2016.11.06-20.11.27:527][310]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2016.11.06-20.11.27:527][310]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.11.06-20.11.27:527][310]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.11.06-20.11.27:527][310]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.11.06-20.11.27:527][310]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.11.06-20.11.27:527][310]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.11.06-20.11.27:650][310]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2016.11.06-20.11.27:650][310]MapCheck: New page: Untitled_0 - Nov 6, 2016, 10:11:27 PM
+[2016.11.06-20.11.27:712][310]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 62.012ms to complete.
+[2016.11.06-20.11.27:733][310]LogEditorBuildUtils: Build time 0:10
+[2016.11.06-20.11.27:765][310]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
+[2016.11.06-20.11.27:825][310]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer WorldGridMaterial, compiling. Is special engine material.
+[2016.11.06-20.11.43:439][312]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
+[2016.11.06-20.11.43:557][312]LogTexture:Display: Building textures: HQ_Lightmap0_3 (AutoDXT)
+[2016.11.06-20.11.43:558][312]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT)
+[2016.11.06-20.11.43:579][312]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
+[2016.11.06-20.11.43:644][312]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1)
+[2016.11.06-20.11.43:649][312]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1)
+[2016.11.06-20.11.43:660][312]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT)
+[2016.11.06-20.11.43:727][312]LogTexture:Display: Building textures: SkyOcclusion0_3 (AutoDXT)
+[2016.11.06-20.11.43:730][312]LogTexture:Display: Building textures: SkyOcclusion1_2 (AutoDXT)
+[2016.11.06-20.11.43:744][312]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8)
+[2016.11.06-20.11.43:825][312]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8)
+[2016.11.06-20.11.43:899][312]LogAIModule: Creating AISystem for world Level1
+[2016.11.06-20.11.43:933][312]LogEditorViewport: Clicking Background
+[2016.11.06-20.11.43:960][312]LogEditorViewport: Clicking Background
+[2016.11.06-20.11.43:971][312]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.11.06-20.11.43:971][312]PIE: New page: PIE session: Untitled_0 (Nov 6, 2016, 10:11:43 PM)
+[2016.11.06-20.11.43:971][312]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_0
+[2016.11.06-20.11.43:971][312]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000458s)
+[2016.11.06-20.11.43:972][312]LogAIModule: Creating AISystem for world NewWorld
+[2016.11.06-20.11.43:972][312]LogPlayLevel: PIE: World Init took: (0.000669s)
+[2016.11.06-20.11.43:972][312]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_0.NewWorld to /Temp/UEDPIE_0_Untitled_0.NewWorld (0.001299s)
+[2016.11.06-20.11.44:003][312]LogInit: XAudio2 using 'Haut-parleurs (8- USB PnP Sound Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.11.06-20.11.44:007][312]LogInit: FAudioDevice initialized.
+[2016.11.06-20.11.44:060][312]LogWorld: Game class is 'TopDownGameMode_C'
+[2016.11.06-20.11.44:062][312]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_0.NewWorld up for play (max tick rate 0) at 2016.11.06-21.11.44
+[2016.11.06-20.11.44:063][312]LogWorld: Bringing up level for play took: 0.000844
+[2016.11.06-20.11.44:065][312]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_0 -0.641
+[2016.11.06-20.11.51:938][942]Job is a success!
+[2016.11.06-20.11.56:164][390]Lightmass on PCENZO: 5.05 sec total, 125 ms importing, 33 ms setup, 460 ms photons, 4.41 sec processing, 0 ms extra exporting [0/0 mappings]. Threads: 48.1 sec total, 0 ms processing.
+[2016.11.06-20.11.56:184][390]LogStaticLightingSystem: Illumination: 34.4 sec (0 ms encoding lightmaps, 0 ms encoding shadowmaps)
+[2016.11.06-20.11.56:184][390]LogStaticLightingSystem: Lightmap texture memory:  0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
+[2016.11.06-20.11.56:184][390]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
+[2016.11.06-20.11.56:549][391]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.11.06-20.11.56:549][391]MapCheck: New page: Untitled_0 - Nov 6, 2016, 10:11:56 PM
+[2016.11.06-20.11.56:659][391]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 109.48ms to complete.
+[2016.11.06-20.12.07:101][351]MapCheck: New page: Map Check
+[2016.11.06-20.12.07:143][351]Cmd: MAP REBUILD ALLVISIBLE
+[2016.11.06-20.12.07:143][351]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2016.11.06-20.12.07:148][351]LightingResults: New page: Lighting Build - Nov 6, 2016, 10:12:07 PM
+[2016.11.06-20.12.07:160][351]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.11.06-20.12.07:162][351]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.11.06-20.12.07:162][351]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.11.06-20.12.07:163][351]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.11.06-20.12.07:163][351]LogSwarmInterface: [TryOpenConnection] Local Process ID is 13740
+[2016.11.06-20.12.11:744][351]LogStaticLightingSystem:Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2016.11.06-20.12.11:744][351]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.11.06-20.12.11:744][351]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.11.06-20.12.11:744][351]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.11.06-20.12.11:744][351]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.11.06-20.12.11:744][351]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.11.06-20.12.11:864][351]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2016.11.06-20.12.11:864][351]MapCheck: New page: Untitled_0 - Nov 6, 2016, 10:12:11 PM
+[2016.11.06-20.12.11:940][351]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 75.647ms to complete.
+[2016.11.06-20.12.11:961][351]LogEditorBuildUtils: Build time 0:04
+[2016.11.06-20.12.14:252][509]Job is a success!
+[2016.11.06-20.12.14:329][510]Lightmass on PCENZO: 848 ms total, 83 ms importing, 25 ms setup, 460 ms photons, 271 ms processing, 0 ms extra exporting [0/0 mappings]. Threads: 2.53 sec total, 0 ms processing.
+[2016.11.06-20.12.14:334][510]LogStaticLightingSystem: Illumination: 7.16 sec (0 ms encoding lightmaps, 0 ms encoding shadowmaps)
+[2016.11.06-20.12.14:334][510]LogStaticLightingSystem: Lightmap texture memory:  0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
+[2016.11.06-20.12.14:334][510]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
+[2016.11.06-20.12.14:763][511]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.11.06-20.12.14:764][511]MapCheck: New page: Untitled_0 - Nov 6, 2016, 10:12:14 PM
+[2016.11.06-20.12.14:873][511]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 109.251ms to complete.
+[2016.11.06-20.12.20:964][239]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.11.06-20.12.20:964][239]PIE: New page: PIE session: Untitled_0 (Nov 6, 2016, 10:12:20 PM)
+[2016.11.06-20.12.20:964][239]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_0
+[2016.11.06-20.12.20:964][239]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000615s)
+[2016.11.06-20.12.20:965][239]LogAIModule: Creating AISystem for world NewWorld
+[2016.11.06-20.12.20:965][239]LogPlayLevel: PIE: World Init took: (0.000708s)
+[2016.11.06-20.12.20:965][239]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_0.NewWorld to /Temp/UEDPIE_0_Untitled_0.NewWorld (0.001534s)
+[2016.11.06-20.12.21:005][239]LogInit: XAudio2 using 'Haut-parleurs (8- USB PnP Sound Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.11.06-20.12.21:009][239]LogInit: FAudioDevice initialized.
+[2016.11.06-20.12.21:087][239]LogWorld: Game class is 'TopDownGameMode_C'
+[2016.11.06-20.12.21:090][239]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_0.NewWorld up for play (max tick rate 0) at 2016.11.06-21.12.21
+[2016.11.06-20.12.21:090][239]LogWorld: Bringing up level for play took: 0.001309
+[2016.11.06-20.12.21:094][239]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_0 0.387
+[2016.11.06-20.12.50:404][101]Cmd: MAP LOAD FILE="../../../../../../Documents/gameoff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.11.06-20.12.50:406][101]LightingResults: New page: Lighting Build
+[2016.11.06-20.12.50:407][101]LoadErrors: New page: Loading map: Level1.umap
+[2016.11.06-20.12.50:413][101]MapCheck: New page: Map Check
+[2016.11.06-20.12.50:413][101]LightingResults: New page: Lighting Build
+[2016.11.06-20.12.50:441][101]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.11.06-20.12.50:568][101]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.11.06-20.12.50:644][101]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 75.536ms to complete.
+[2016.11.06-20.12.50:645][101]LogFileHelpers: Loading map 'Level1' took 0.242
+[2016.11.06-20.12.54:486][550]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/TopDownBP/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1'
+[2016.11.06-20.12.54:486][550]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.11.06-20.12.54:486][550]PIE: New page: PIE session: Level1 (Nov 6, 2016, 10:12:54 PM)
+[2016.11.06-20.12.54:486][550]LogPlayLevel: Creating play world package: /Game/TopDownBP/Maps/UEDPIE_0_Level1
+[2016.11.06-20.12.54:544][550]LogPlayLevel: PIE: StaticDuplicateObject took: (0.057635s)
+[2016.11.06-20.12.54:545][550]LogAIModule: Creating AISystem for world Level1
+[2016.11.06-20.12.54:546][550]LogPlayLevel: PIE: World Init took: (0.001778s)
+[2016.11.06-20.12.54:546][550]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TopDownBP/Maps/Level1.Level1 to /Game/TopDownBP/Maps/UEDPIE_0_Level1.Level1 (0.059909s)
+[2016.11.06-20.12.54:577][550]LogInit: XAudio2 using 'Haut-parleurs (8- USB PnP Sound Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.11.06-20.12.54:581][550]LogInit: FAudioDevice initialized.
+[2016.11.06-20.12.54:661][550]LogWorld: Game class is 'TopDownGameMode_C'
+[2016.11.06-20.12.54:668][550]LogWorld: Bringing World /Game/TopDownBP/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2016.11.06-21.12.54
+[2016.11.06-20.12.54:669][550]LogWorld: Bringing up level for play took: 0.006033
+[2016.11.06-20.12.54:678][550]PIE: Info Play in editor start time for /Game/TopDownBP/Maps/UEDPIE_0_Level1 -0.029
+[2016.11.06-20.12.54:678][550]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/TopDownBP/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1'
+[2016.11.06-20.13.12:449][574]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/TopDownBP/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1'
+[2016.11.06-20.13.12:478][574]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/TopDownBP/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1'
+[2016.11.06-20.13.14:973][860]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
+[2016.11.06-20.13.14:990][860]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
+[2016.11.06-20.13.15:104][860]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1)
+[2016.11.06-20.13.15:119][860]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1)
+[2016.11.06-20.13.15:192][860]LogTexture:Display: Building textures: SkyOcclusion0_2 (AutoDXT)
+[2016.11.06-20.13.15:200][860]LogTexture:Display: Building textures: SkyOcclusion1_1 (AutoDXT)
+[2016.11.06-20.13.15:256][860]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (G8)
+[2016.11.06-20.13.15:271][860]LogTexture:Display: Building textures: ShadowMapTexture2D_3 (G8)
+[2016.11.06-20.13.15:283][860]LogAIModule: Creating AISystem for world LevelSkeleton
+[2016.11.06-20.13.15:300][860]Cmd: MAP LOAD FILE="../../../../../../Documents/gameoff2016/IncreaseYourMind/Content/TopDownBP/Maps/LevelSkeleton.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.11.06-20.13.15:300][860]LightingResults: New page: Lighting Build
+[2016.11.06-20.13.15:301][860]LoadErrors: New page: Loading map: LevelSkeleton.umap
+[2016.11.06-20.13.15:302][860]MapCheck: New page: Map Check
+[2016.11.06-20.13.15:302][860]LightingResults: New page: Lighting Build
+[2016.11.06-20.13.15:316][860]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.11.06-20.13.15:335][860]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.11.06-20.13.15:376][860]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 41.213ms to complete.
+[2016.11.06-20.13.15:376][860]LogFileHelpers: Loading map 'LevelSkeleton' took 0.077
+[2016.11.06-20.13.16:691][ 12]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel.LevelSkeleton' with GeneratedClass '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel.LevelSkeleton'
+[2016.11.06-20.13.16:691][ 12]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.11.06-20.13.16:691][ 12]PIE: New page: PIE session: LevelSkeleton (Nov 6, 2016, 10:13:16 PM)
+[2016.11.06-20.13.16:691][ 12]LogPlayLevel: Creating play world package: /Game/TopDownBP/Maps/UEDPIE_0_LevelSkeleton
+[2016.11.06-20.13.16:721][ 12]LogPlayLevel: PIE: StaticDuplicateObject took: (0.029879s)
+[2016.11.06-20.13.16:722][ 12]LogAIModule: Creating AISystem for world LevelSkeleton
+[2016.11.06-20.13.16:722][ 12]LogPlayLevel: PIE: World Init took: (0.000867s)
+[2016.11.06-20.13.16:722][ 12]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton to /Game/TopDownBP/Maps/UEDPIE_0_LevelSkeleton.LevelSkeleton (0.031074s)
+[2016.11.06-20.13.16:752][ 12]LogInit: XAudio2 using 'Haut-parleurs (8- USB PnP Sound Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.11.06-20.13.16:756][ 12]LogInit: FAudioDevice initialized.
+[2016.11.06-20.13.16:831][ 12]LogWorld: Game class is 'TopDownGameMode_C'
+[2016.11.06-20.13.16:838][ 12]LogWorld: Bringing World /Game/TopDownBP/Maps/UEDPIE_0_LevelSkeleton.LevelSkeleton up for play (max tick rate 0) at 2016.11.06-21.13.16
+[2016.11.06-20.13.16:839][ 12]LogWorld: Bringing up level for play took: 0.006071
+[2016.11.06-20.13.16:841][ 12]PIE: Info Play in editor start time for /Game/TopDownBP/Maps/UEDPIE_0_LevelSkeleton 0.135
+[2016.11.06-20.13.16:842][ 12]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel.LevelSkeleton' with GeneratedClass '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel.LevelSkeleton'
+[2016.11.06-20.13.39:486][708]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel.LevelSkeleton' with GeneratedClass '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel.LevelSkeleton'
+[2016.11.06-20.13.39:518][708]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel.LevelSkeleton' with GeneratedClass '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/LevelSkeleton.LevelSkeleton:PersistentLevel.LevelSkeleton'
+[2016.11.06-20.13.40:699][838]LogAIModule: Creating AISystem for world Level1
+[2016.11.06-20.13.40:729][838]Cmd: MAP LOAD FILE="../../../../../../Documents/gameoff2016/IncreaseYourMind/Content/TopDownBP/Maps/Level1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.11.06-20.13.40:729][838]LightingResults: New page: Lighting Build
+[2016.11.06-20.13.40:730][838]LoadErrors: New page: Loading map: Level1.umap
+[2016.11.06-20.13.40:730][838]MapCheck: New page: Map Check
+[2016.11.06-20.13.40:730][838]LightingResults: New page: Lighting Build
+[2016.11.06-20.13.40:751][838]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.11.06-20.13.40:769][838]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.11.06-20.13.40:830][838]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 60.533ms to complete.
+[2016.11.06-20.13.40:830][838]LogFileHelpers: Loading map 'Level1' took 0.102
+[2016.11.06-20.13.43:848][193]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/TopDownBP/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1'
+[2016.11.06-20.13.43:848][193]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.11.06-20.13.43:848][193]PIE: New page: PIE session: Level1 (Nov 6, 2016, 10:13:43 PM)
+[2016.11.06-20.13.43:848][193]LogPlayLevel: Creating play world package: /Game/TopDownBP/Maps/UEDPIE_0_Level1
+[2016.11.06-20.13.43:871][193]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022778s)
+[2016.11.06-20.13.43:871][193]LogAIModule: Creating AISystem for world Level1
+[2016.11.06-20.13.43:871][193]LogPlayLevel: PIE: World Init took: (0.000617s)
+[2016.11.06-20.13.43:871][193]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TopDownBP/Maps/Level1.Level1 to /Game/TopDownBP/Maps/UEDPIE_0_Level1.Level1 (0.023610s)
+[2016.11.06-20.13.43:906][193]LogInit: XAudio2 using 'Haut-parleurs (8- USB PnP Sound Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.11.06-20.13.43:911][193]LogInit: FAudioDevice initialized.
+[2016.11.06-20.13.43:989][193]LogWorld: Game class is 'TopDownGameMode_C'
+[2016.11.06-20.13.43:996][193]LogWorld: Bringing World /Game/TopDownBP/Maps/UEDPIE_0_Level1.Level1 up for play (max tick rate 0) at 2016.11.06-21.13.43
+[2016.11.06-20.13.43:997][193]LogWorld: Bringing up level for play took: 0.005605
+[2016.11.06-20.13.43:999][193]PIE: Info Play in editor start time for /Game/TopDownBP/Maps/UEDPIE_0_Level1 -0.708
+[2016.11.06-20.13.43:999][193]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/TopDownBP/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1'
+[2016.11.06-20.14.05:569][765]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/TopDownBP/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1'
+[2016.11.06-20.14.05:596][765]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1' with GeneratedClass '/Game/TopDownBP/Maps/Level1.Level1_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/Level1.Level1:PersistentLevel.Level1'
+[2016.11.06-20.14.06:999][930]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.11.06-20.14.15:778][884]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2016.11.06-20.14.16:539][950]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.11.06-20.14.25:658][936]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2016.11.06-20.14.26:416][999]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2016.11.06-20.14.27:070][ 73]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2016.11.06-20.14.27:925][166]LogEditorViewport: Clicking on Component (context menu): StaticMeshComponent (StaticMeshComponent0)
+[2016.11.06-20.14.28:803][249]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
+[2016.11.06-20.14.35:040][906]LogEditorViewport: Clicking on Actor (LMB): TopDownCharacter_C (TopDownCharacter)
+[2016.11.06-20.14.35:341][912]LogEditorViewport: Clicking on Component (LMB): SkeletalMeshComponent (CharacterMesh0)
+[2016.11.06-20.14.38:257][203]Cmd: TRANSACTION UNDO
+[2016.11.06-20.14.38:257][203]LogEditorTransaction: Undo Move Components
+[2016.11.06-20.14.43:082][679]LogEditorViewport: Clicking on Actor (double click): StaticMeshActor (Floor)
+[2016.11.06-20.14.44:866][859]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.11.06-20.14.46:045][994]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2016.11.06-20.14.46:747][ 52]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.11.06-20.14.50:952][529]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2016.11.06-20.15.06:279][248]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2016.11.06-20.15.17:214][206]Cmd: QUIT_EDITOR
+[2016.11.06-20.15.17:324][206]LogExit: Preparing to exit.
+[2016.11.06-20.15.18:308][206]LogExit: Editor shut down
+[2016.11.06-20.15.18:308][206]LogExit: Transaction tracking system shut down
+[2016.11.06-20.15.18:427][206]LogObj: Freed 0b from 0 cluster array pools.
+[2016.11.06-20.15.18:427][206]LogExit: Object subsystem successfully closed.
+[2016.11.06-20.15.18:439][206]LogD3D11RHI: Shutdown
+[2016.11.06-20.15.18:439][206]LogD3D11RHI: CleanupD3DDevice
+[2016.11.06-20.15.18:510][206]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.11.06-20.15.18:527][206]LogModuleManager: Shutting down and abandoning module StatsViewer (215)
+[2016.11.06-20.15.18:527][206]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (214)
+[2016.11.06-20.15.18:546][206]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (213)
+[2016.11.06-20.15.18:547][206]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (212)
+[2016.11.06-20.15.18:547][206]LogModuleManager: Shutting down and abandoning module CrashTracker (211)
+[2016.11.06-20.15.18:547][206]LogModuleManager: Shutting down and abandoning module SceneOutliner (210)
+[2016.11.06-20.15.18:547][206]LogModuleManager: Shutting down and abandoning module WidgetCarousel (209)
+[2016.11.06-20.15.18:547][206]LogModuleManager: Shutting down and abandoning module AddContentDialog (208)
+[2016.11.06-20.15.18:548][206]LogModuleManager: Shutting down and abandoning module GameplayTags (207)
+[2016.11.06-20.15.18:548][206]LogModuleManager: Shutting down and abandoning module EditorWidgets (206)
+[2016.11.06-20.15.18:548][206]LogModuleManager: Shutting down and abandoning module CollectionManager (205)
+[2016.11.06-20.15.18:548][206]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.11.06-20.15.18:548][206]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.11.06-20.15.18:549][206]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.11.06-20.15.18:550][206]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.11.06-20.15.18:550][206]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.11.06-20.15.18:550][206]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.11.06-20.15.19:171][206]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.11.06-20.15.19:171][206]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.11.06-20.15.19:171][206]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.11.06-20.15.19:172][206]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.11.06-20.15.19:173][206]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.11.06-20.15.19:173][206]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.11.06-20.15.19:173][206]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.11.06-20.15.19:173][206]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.11.06-20.15.19:173][206]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.11.06-20.15.19:173][206]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.11.06-20.15.19:173][206]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.11.06-20.15.19:223][206]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.11.06-20.15.19:223][206]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.11.06-20.15.19:223][206]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.11.06-20.15.19:223][206]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.11.06-20.15.19:223][206]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.11.06-20.15.19:223][206]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.11.06-20.15.19:223][206]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.11.06-20.15.19:223][206]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.11.06-20.15.19:224][206]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.11.06-20.15.19:389][206]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.11.06-20.15.19:389][206]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.11.06-20.15.19:390][206]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.11.06-20.15.19:391][206]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.11.06-20.15.19:391][206]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.11.06-20.15.19:391][206]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.11.06-20.15.19:391][206]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.11.06-20.15.19:393][206]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.11.06-20.15.19:394][206]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.11.06-20.15.19:394][206]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.11.06-20.15.19:494][206]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.11.06-20.15.19:494][206]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.11.06-20.15.19:494][206]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.11.06-20.15.19:494][206]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.11.06-20.15.19:494][206]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.11.06-20.15.19:495][206]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.11.06-20.15.19:496][206]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.11.06-20.15.19:496][206]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.11.06-20.15.19:496][206]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.11.06-20.15.19:500][206]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.11.06-20.15.19:500][206]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.11.06-20.15.19:500][206]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.11.06-20.15.19:500][206]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.11.06-20.15.19:500][206]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.11.06-20.15.19:500][206]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.11.06-20.15.19:501][206]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.11.06-20.15.19:727][206]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.11.06-20.15.19:728][206]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.11.06-20.15.19:728][206]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.11.06-20.15.19:728][206]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.11.06-20.15.19:746][206]LogDerivedDataCache: Shutdown
+[2016.11.06-20.15.19:746][206]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.11.06-20.15.19:746][206]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.11.06-20.15.19:746][206]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.11.06-20.15.19:746][206]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.11.06-20.15.19:747][206]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.11.06-20.15.19:748][206]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.11.06-20.15.19:748][206]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.11.06-20.15.19:748][206]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.11.06-20.15.19:748][206]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.11.06-20.15.19:748][206]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.11.06-20.15.21:248][206]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.11.06-20.15.21:248][206]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.11.06-20.15.21:249][206]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.11.06-20.15.21:249][206]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.11.06-20.15.21:249][206]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.11.06-20.15.21:249][206]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.11.06-20.15.21:249][206]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.11.06-20.15.21:252][206]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.11.06-20.15.21:252][206]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.11.06-20.15.21:252][206]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.11.06-20.15.21:252][206]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.11.06-20.15.21:252][206]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.11.06-20.15.21:252][206]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.11.06-20.15.21:252][206]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.11.06-20.15.21:252][206]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.11.06-20.15.21:252][206]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.11.06-20.15.21:252][206]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.11.06-20.15.21:255][206]LogExit: Exiting.
+[2016.11.06-20.15.21:265][206]Log file closed, 11/06/16 21:15:21
