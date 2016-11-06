@@ -1,11 +1,11 @@
-# GitHub Game Off 2016 - Tasdulku
+# GitHub Game Off 2016 - Increase your Mind
 
 ## *FR*
 
 ### Principe du jeu
-Tasdulku est un jeu médiaval en 2.5D se jouant à deux joueurs en LAN/WAN.  
+Increase your Mind est un jeu médiaval en 2.5D se jouant à deux joueurs en LAN/WAN.  
 Le jeu est composé de plusieurs niveaux.  
-Pour s'échapper des différents niveaux, les deux joueurs devront s'entraider et communiquer entre eux pour détourner l'esprit des créatures afin d'utiliser leurs pouvoirs pour sortir des différents niveaux.
+Pour s'échapper des différents niveaux, les deux joueurs devront s'entraider et communiquer entre eux pour détourner les sorts des créatures pour sortir des différents niveaux.
 
 ---
 Capacités des joueurs :
@@ -25,6 +25,7 @@ Les outils pourront être trouvés sur le sol ou en cassant des caisses.
 
 Liste des outils:
 - Hache
+- Pelle
 - ...
 
 #### Ennemis
