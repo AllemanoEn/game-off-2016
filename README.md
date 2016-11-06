@@ -29,7 +29,7 @@ Liste des outils:
 - ...
 
 #### Ennemis
-Les ennemis pourront être contrôler en fonction de leurs niveaux et celui du joueur.
+Les ennemis pourront être contrôlé en fonction de leurs niveaux et celui du joueur.
 
 Liste des enemis:
 - Araignée | capacité: lance une toile tissée
