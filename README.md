@@ -1,9 +1,9 @@
 # GitHub Game Off 2016 - Increase your Mind
-
+<p align=center><img src="./ressource/logo_v1.png" width="350"/></p>
 ## *FR*
 
 ### Principe du jeu
-Increase your Mind est un jeu médiaval en 2.5D se jouant à deux joueurs en LAN/WAN.  
+Increase Your Mind est un jeu médiaval en 2.5D se jouant à deux joueurs en LAN/WAN.  
 Le jeu est composé de plusieurs niveaux.  
 Pour s'échapper des différents niveaux, les deux joueurs devront s'entraider et communiquer entre eux pour détourner les sorts des créatures pour sortir des différents niveaux.
 
@@ -29,7 +29,7 @@ Liste des outils:
 - ...
 
 #### Ennemis
-Les ennemis pourront être contrôler en fonction de leurs niveaux et celui du joueur.
+Les ennemis pourront être contrôlé en fonction de leurs niveaux et celui du joueur.
 
 Liste des enemis:
 - Araignée | capacité: lance une toile tissée
