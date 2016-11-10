@@ -1,5 +1,5 @@
 # GitHub Game Off 2016 - Increase your Mind
-<p align=center><img src="./ressource/logo.png" width="800px"/></p>
+<p align=center><img src="./res/logo.png" width="800px"/></p>
 ## *FR*
 
 ### Principe du jeu
@@ -26,6 +26,7 @@ Les outils pourront être trouvés sur le sol ou en cassant des caisses.
 Liste des outils:
 - Hache
 - Pelle
+- Marteau
 - ...
 
 #### Ennemis
